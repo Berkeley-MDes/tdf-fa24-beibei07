@@ -38,6 +38,8 @@ And I quickly sketched a few phone stand designs inspired by these lightweight s
 # Week 2: 
 ## Week of 09/05/2024
 
+
+
 ![image](https://github.com/user-attachments/assets/6e1f6210-d0c3-4dd5-88ac-7460d1c86033)
 ![image](https://github.com/user-attachments/assets/f0d81a98-3824-4617-ba6a-9614e30bff23)
 
