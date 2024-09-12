@@ -35,6 +35,41 @@ And I quickly sketched a few phone stand designs inspired by these lightweight s
 ![Image_20240905154309](https://github.com/user-attachments/assets/31b1c9b6-3dee-4ecc-aad8-ac8b500e58b1)
 
 
+# Week 2: 
+## Week of 09/05/2024
+
+![image](https://github.com/user-attachments/assets/6e1f6210-d0c3-4dd5-88ac-7460d1c86033)
+![image](https://github.com/user-attachments/assets/f0d81a98-3824-4617-ba6a-9614e30bff23)
+
+
+
+
+
+
+Learning basic UI and features
+![image](https://github.com/user-attachments/assets/fab1f7d8-263e-4039-9c83-e4f5eef66842)
+Merge (so can know which data set creates the first circle and which creates the second)
+Shift + drag: connect two wires to one node 
+![image](https://github.com/user-attachments/assets/2ffd5df3-9e45-44c6-bfe6-2c05e678711e)
+![image](https://github.com/user-attachments/assets/de732caa-edf4-4628-a611-abbed6907b71)
+Parameters: empty geometry containers
+Reight click point--set one point: can colate a point in Rhino file (a way to connect Rhino with Grasshopper, especially helpful when want to designate a point on a existing Rhino design)
+![image](https://github.com/user-attachments/assets/69e844b4-1d82-462c-a1c4-3eed2b45149c)
+Reight click point--Clear value: clear the point selected in Rhino file
+![image](https://github.com/user-attachments/assets/6acd4eea-5680-4c0b-ba5e-e70c4aadc475)
+![image](https://github.com/user-attachments/assets/581359b4-ec60-45e2-b905-9b629255e3db)
+Reight click point--set multiple point: allow to create multiple points in Rhino file 
+![image](https://github.com/user-attachments/assets/e20ff998-e75c-4b8f-a418-a5761148469f)
+Reight click point--internalize data: encode the points selected in Rhino into Grasshopper (so even if Rhino file is not saved, the points still have references, but breaks the link of these points, i.e. operating the points in Rhino will not incure subsequent changes geometry created via Grasshopper). 
+
+Parameter
+![image](https://github.com/user-attachments/assets/2e3715db-b048-48da-a3c0-53e8e7fb8981)
+6 types of geometry: point, curve, surface, Brep, mesh, SubD
+
+
+Click + insert key: short cut to bake the geometry into the currently active layer in Rhino (cannot create group geometry, cannot select layer)
+
+
 
 
 
