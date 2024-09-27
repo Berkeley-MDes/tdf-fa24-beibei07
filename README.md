@@ -76,10 +76,10 @@ Click + insert key: short cut to bake the geometry into the currently active lay
 # Week 3: 
 ## Week of 09/12-19
 ***
-##New Things Learned
-When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences. 
+## New Things Learned  
+When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences.   
 
-###1. Creating a clamp 
+### 1. Creating a clamp   
 Creating a clamp
 
 
