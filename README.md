@@ -75,7 +75,7 @@ Click + insert key: short cut to bake the geometry into the currently active lay
 
 # Week 3: 
 ## Week of 09/12-19  
-### New Things Learned  
+### Reflections: New Things Learned   
 When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences.   
 
 #### 1. Creating a clamp   
@@ -87,7 +87,7 @@ When a number slider do not satisfy the need to limit numeric value within a ran
 Understand it like this: B is a filter. In the maximum setting, all values greater than B can pass through, while values smaller than B are transformed into B and then pass through. In the minimum setting, all values smaller than B can pass through, while values greater than B are transformed into B and then pass through.  
                                                                                                             
 In the example: In the maximum setting, all values greater than 0 (B) can pass through, while values smaller than 0 are transformed into 0 before passing through to the minimum A value. Then, in the minimum setting, all values smaller than 2.8 (B) can pass through, while values greater than 2.8 (B) are automatically recognized as 2.8. Therefore, in this system, the values are locked within the range of 0 to 2.8.                                                                                                                                                                                                                   
-### 2. Draw Curved Line 
+#### 2. Draw Curved Line 
 <table>
   <tr>
     <td>
@@ -113,13 +113,35 @@ Steps:
 </div> 
 Sometimes a line is not enough, we want to create a closed shape. This can be achieved through offseting the tangent curve, extracting the end points of both curves (End Points component), and create line by using these points (Line component). Merge all the lines (Merge component), then join them using Join Curve into one continuous curve.  
                                                                                                             
-### 3. Create Grid of Points  
+#### 3. Create Grid of Points  
 <div align="center">
   <img src="https://github.com/user-attachments/assets/8040f5c0-33ef-4377-8e43-70b0a24c44de" alt="end points" width="80%"/>
 </div>  
 To create a grod of points, first use Construct Domain to define the size/range of the grid. Input the result into the domain of two Range compoents, then connect the steps to a number slider, which can be used to control the number of points that are evenly distributed within the domain.  
-                                                                                                            Currently, the grid only have a horizontal/vertical/diagonal row of points. To fill up the grid, input the result from Range compoenents into the Cross Reference compoent. Finally use Construct Point to instatiate the points.   
-
+                                                                                                            Currently, the grid only have a horizontal/vertical/diagonal row of points. To fill up the grid, input the result from Range compoenents into the Cross Reference compoent. Finally use Construct Point to instatiate the points.  
+                                                                                                            
+#### State of Work Assessment:  
+What I did well: 
+1. I explored many different techniques in Grasshopper to accomplish the final result I envisioned. I did not modified my design because I do not know how to do a certain manipulation, but kept the learning attitude to dive in the problems and solve them.
+2. I explored the now feel comfortable to create relationships between various aspects of design, so modification can happen quickly and easily. This is what I regard as the most important aspect of computational design.
+What I could improve:
+1. I wish to not only explore patterning and modeling, but also leverage some physical calculation functions in Grasshopper, such as funding the center of gravity, and use them to make my design more resiliant across various situations.
+                                                                                                         
+### Speculations:  
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/678b0522-e1fe-455a-8679-0b5a195ab015" alt="end points" width="80%"/>
+</div>  
+As AI become a popular trend, many creative work platform are utilizing this technology to create faster and easier workflow. In adobe Illustrator, users can put in command to quickly change the color of the entire illustration. Designers can use this feature to quickly gain an undertanding of color choices, which could take hours to accomplish before the AI arrival.  
+                                                                                                            Grasshopper can certainly benefit from levergaing the power of AI. For example, users do not need to manually create all the components and connect them, they can simply describe what result they want (maybe AI can ask users to add some constraint for a more guided result), then AI will generate them a Grasshopper diagram they can then alter to adjust the design. Each part of the diagram could also be text descriptive, this saves users' effort in understanding the terms and features. By incoporating AI, Grasshopper could be used for the unprofessionals to create their own designs and save time for professional designers.  
+                                                                                                            
+### Link to the Grasshopper Project Video:
+https://youtu.be/i21BiLD5xEc  
+https://drive.google.com/drive/u/0/folders/1zDJGID57NZNYDydazGOXSmxJ7tzvU22K  
+                                                                                                            
+# Week 4
+## Week 19-26
+                                                                                                            
+                                                                                                      
 
 
 
