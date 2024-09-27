@@ -41,6 +41,7 @@ And I quickly sketched a few phone stand designs inspired by these lightweight s
 
 
 
+
 ![image](https://github.com/user-attachments/assets/6e1f6210-d0c3-4dd5-88ac-7460d1c86033)
 ![image](https://github.com/user-attachments/assets/f0d81a98-3824-4617-ba6a-9614e30bff23)
 
@@ -140,241 +141,19 @@ https://drive.google.com/drive/u/0/folders/1zDJGID57NZNYDydazGOXSmxJ7tzvU22K
                                                                                                             
 # Week 4
 ## Week 19-26
+### The Digital Ecosystem
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2b7915ec-3908-4a09-b960-c1abda3cf59b" alt="end points" width="100%"/>
+</div>  
+  
+Xiaomi has developed an extensive smart home ecosystem through its Mi Home platform. This system enables users to control a wide range of smart home devices through a centralized app (called Mi Home) and other connected devices. Like Amazon Alexa, Xiaomi has also developed an AI asistant named Xiaoai, by directing talking to smart speaker with Xiaoai installed, users can directly control the smart devices with their voice. This Xioami digital ecosystem has been in use at my home for several years, so I decided to talk about it for this project.    
+
+### Refelctions 
+
+
                                                                                                             
                                                                                                       
 
 
 
 
-
-
-
-
-
-
-
-Jiahua (Vivian) Zhu
-The Seed Sprouter
-https://youtu.be/i21BiLD5xEc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Project Challenge Level Rationale 
-
-The project challenge level I chose is 03-Axolotl, this is because this project poses some challenges to me since I have barely used grasshopper before. However, I want to take this challenge to deepen my understanding in the elusive concept of computational design and reach my goals of 1) feel comfortable in using Grasshopper 2) explore the capability of computational design and its basic logic to be able to apply it in enforcing my future design processes. 
-
-System Diagrammatic Analysis 
-
-One fascinating aspect of computational design is its flexibility in adapting to different user’s needs in various use cases. With this in mind, I included various adjustable features in the seed sprouter design which I will further demonstrate below with the AEIOU framework and diagrammatic analysis of the Grasshopper diagram. 
-
-First Iteration
-
-The first iteration of the design is focusing on the use case of needing the seed sprouter to be compatible with different vase shapes. 
-
-Activities: Users use a seed sprouter 
-mainly to grow seeds/ leftover vegetable scrap into sprouts. To achieve this goal, users engage in a series of activities: they soak seeds (may not be performed depending on the seed type), place them in the sprouter, make sure seed sprouter is in contact with water in the vase, fill in water if not enough, and monitor growth. Users perform these activities so they can 1) harvest the sprouts as spices / cooking ingredients 2) observe growth for joy, which leads to subsequent activities such as harvesting or observing, causing diverging design goals. 
-
-Environment: The seed sprouter is most likely to be placed in the kitchen environment, often in small or confined spaces like countertops or window sills. To facilitate growth, direct contact with sunlight will be desirable. Seed sprouter design needs to fit small spaces and be made of lighter materials to avoid excessive heat absorption and the material needs to be water and mold resistant since it is used in moist environment. Aesthetic-wise, users with either expectation (cooking or observation) would prefer the seed sprouter to blend well with the kitchen environment, so choosing a aesthetically neutral design style would be desirable. 
-
-Interaction: Upon first use, users would need to find compatible vases so the seed sprouter would fit in. Next, users should fill water into the vase to a point the seed is partially soaked. Users are expected to frequently observe the water level and fill water periodically by lifting the seed sprouter up and pouring water into the vase or directly pouring on the sprout depending on the sprout's type and growth status. If users’ goal is in harvesting the plant, they would occasionally trim off part of the sprout when in need. 
-
-Objectives：The objectives involved are mainly the seed sprouter itself and the vase it sits on. The seed sprouter should be made of material that is reusable, durable, and non-toxic. Based on previously analyzed interactions and activities, sprouter needs to be 1) compatible with a variety of vase shapes 2) can be handled easily / ergonomically fitting most users’ hands 3) sits on vases steadily to avoid tipping when the sprout is being rimmed 4) make sure water level is easily observable. 
-
-Users: For a simple seed sprouter design, users are unlikely professional gardeners, they are more likely to be amateur hobbyists who like to observe plant growth and without spending too much time on gardening; and/or health-conscious individuals who are interested in growing fresh sprouts at home. For these users, the sprouter’s design should be convenient, easy to use, easy to accommodate the given condition at home.
-
-From the AEIOU analysis, a few points stand out. In summary, the seed sprouter design requirements are: 1) easy to handle and sits steadily on top of vases, 2) be able to accommodate various vase shapes users have, 3) moist-resistant materials, and 4) made in a lighter color to avoid excessive heat absorption. In order to comprehend computational design’s ability of modifying model to accommodate different circumstances, I adopted a well designed sprouter found online and used it as the basis to explore the second design requirement (vase accommodation. Material decisions will be covered in other sections. 
-
-My Grasshopper diagram consists of four main parts: 1) constructing the vase, 2) building relationship between z positions of the vase and the sprouter 3) building relationship between radius of the vase and the sprouter 4)constructing the sprouter. 
-
-
-
-For the first part of constructing the vase, I identified four necessary features in building a vase of any shape, which are top edge, neck, belly, and base; then I introduced two types of input, z-position and radius, to make four circles representing these four features. By manipulating these features, the vase can be transformed into any desired shape. Then by lofting and offsetting, a vase with wall thickness is built. 
-
-The seed sprouter can be constructed in the same way by first identifying some key features, making circles that represent them, lofting, and offsetting. The difference is that the z-position and radius of the sprouter need to be built in relationship with the vase, so that when the vase is being modified, the sprouter could change along to ensure consistent fitness. The features identified are top edge, belly (where the seeds are being placed), and bottom edge. One additional circle is being added near the top edge feature as shape control when lofting. 
-
-
-
-For building the Z-position and radius of the sprouters, I applied mathematic calculations in Grasshopper (subtraction, addition, multiplication, and division),  used the radius and Z-position of the vase’s top edge as one of the input and other numbers on the slider as the other. The results define the basic profile of the sprouter. 
-
-Since part of the sprouter extends inside the vase, and the sprouter itself is also modifiable for customization, I need to make sure that when it is being modified, the sprouter will never collide with the vase. In order to do this, I created a “filter” using Minimum, Maximum, and Domain components to manually clamp the radius input within a range. By combining this “filter” with another Division component, I make sure that the radius at the sprouter's belly (its widest part) will remain at least 1.5 times smaller than the neck of the bottle. 
-
-
-
-After defining the relationship and constraints, I lofted the circles to make one surface of the sprouter and used offset to build the other surface. Then I extracted both top and bottom edges of the two surfaces and lofted them to obtain the necessary surfaces to make an enclosed shape. Finally, by merging the four surfaces, the seed sprouter is built. 
-
-Second Iteration 
-
-After completing the first iteration, I contemplated my 	need as a seed sprouter user, adding on one more design requirement: adaptation to various seeds, not just avocado. This challenge me to use Grasshopper to control the number and radius of perforations on the sprouter. 
-
-
-
-My first attempt is to use the model built from the first iteration as the basis, and Boolean Difference it with cylinders to make perforations. However, although I used Brep Join to merge the four surfaces, Grasshopper is still not recognizing the model as a solid shape, which prevents it from performing Boolean Difference. Therefore, I decided to use Revolution as an alternative path to build the basic sprouter’s shape. 
-
-
-
-The first step to build the sprouter using revolution is to construct the profile line drawing. I created three line segments using the Tangent Line component, joined and offset them to obtain a line on the other side. Then by extracting the end points of both line segments and inputting them into the Construct Line, I obtain the short segment between these two lines. Finally by merging them, I have a closed profile line drawing. The next step is to revolve. I reoriented the profile drawing to match the axis and target plane I have constructed early on, and by using the Revolution component, a closed shape sprouter is being generated. 
-
-
-
-The next step is to build a grid of points that defines the location and number of the perforations. I first used Construct Domain and Range components to create a row of points, and then used the Cross Reference component to extend the row into a matrix and points. The range and number of points are modifiable by manipulating the input. At this step, the matrix is in a square shape, not matching the circular shape of the sprouter. To achieve a circular matrix, I first generated a circle by intersecting a plane with the sprouter and performed the Brep | Plane component; then I used the Distance component to calculate the distance between each point on the grid and the circle’s center; finally, by using the Smaller Than component, I identified points that have a distance from the center points larger than the circle’s radius, which means they lay outside of the circle. By culling these points, the matrix is trimmed into a circular shape. 
-
-
-
-Now the points are constructed, I need to make sure the circles generated from them will have an inverse relationship between their number (of circles) and radius. This ensures that when the number of perforation increases, they will not overlap each other. This is achieved by building a calculation system using List Length, Multiplication, and Division components. 
-
-
-
-Finally, by extruding these circles and Boolean Differenced them with the Sprouter, the final model is generated. The number of perforation can be manipulated by the number of steps in the Range component constructing the matrix; and the size of perforation can be adjusted within the calculation system. 
-
-Fabrication Analysis 
-
-Material decision is another important aspect in this seed sprouter design. As analyzed using the AEIOU framework, the material needs to be 1)moist-resistant materials, and 2) made in a lighter color to avoid excessive heat absorption. Leveraging the technique and material available to me, I choose 3D printing as my fabrication method. For material, I explored both PLA and resin, both were able to give me lightweight, moist-resistant, and light-colored results. Resin produces a significantly finer result with prolonged fabrication time, for environmental friendly and power saving purposes, PLA might be a preferable choice. Production time could also be controlled by manipulating the offset distance to change to wall thickness. 
-
-
-Prototype Demonstration 
-
-
-
-Project Challenge Result 
-
-To explore computational technologies, I focused primarily on developing techniques that build constraints and relationships between different parts of the design. This approach ensures that when one element is modified, the other components adjust accordingly, maintaining the overall integrity of the design and eliminating the need for the designer to manually adjust each element for fit. By automating these relationships, I was able to streamline the design process, making it more efficient and reducing the potential for errors during iterations. These experiments not only allowed me to better understand the role of computational tools in design but also taught me to observe the key features of objects and how they interact with one another. This perspective helped me recognize the importance of flexibility and adaptability in design, as I began to comprehend how different elements could be manipulated to meet diverse user needs and function effectively across various environmental conditions. Moreover, this approach emphasizes the importance of scalability, ensuring that the design can evolve smoothly without compromising its usability or performance, even when faced with unforeseen challenges or changes in user behavior.
-
-Speculation
-
-Human Experiences:
-
-As computational design tools become increasingly integrated into the design process, human experiences with everyday objects, like a seed sprouter, will shift dramatically. In the context of the Anthropogenic Environment—where human activities are the dominant influence on the environment—the expectations for how objects interact with our surroundings may evolve. Users will likely expect products that are not only functional but also responsive and adaptable to changing conditions. For instance, in the case of a seed sprouter, users may expect the design to automatically adapt to varying humidity levels or daylight conditions, optimizing sprouting processes without manual intervention. Culturally, there may be a stronger expectation for designs that blend seamlessly into different lifestyles and contexts, driven by the desire for sustainability and efficiency. The boundaries between design, function, and environment will blur, and cultural expectations might prioritize objects that actively participate in environmental sustainability and self-regulation. In this sense, the seed sprouter may no longer be seen as a passive tool but as an active participant in human-environment interactions.
-
-Engineering
-
-In terms of engineering, computational design tools and systems thinking will push the boundaries of how products are made and customized. Rather than designing objects with fixed parameters, future designs might be more modular and capable of self-adjustment based on real-time user feedback or environmental data. This could shift cultural expectations towards products that are not only mass-produced but also personalized to the user’s individual preferences and the specific environments they inhabit. For example, the seed sprouter could be designed to adjust automatically based on the types of seeds being grown, the user's geographic location, or the amount of available light, without requiring manual adjustment. The use of computational design in engineering might also shift expectations toward a more sustainable approach, where materials and manufacturing methods are optimized for minimal waste. In this way, products like the seed sprouter could be designed with built-in recyclability, biodegradability, or repurposability in mind, aligning with growing cultural concerns about environmental impact.
-
-AI
-
-AI will play a pivotal role in shaping systems of Observe > Measure > Model > Evaluate > Fabricate > Test, particularly by making these systems more interconnected and autonomous. In the case of the seed sprouter, AI could be employed to observe and measure environmental conditions—such as temperature, humidity, and light—and then model the optimal conditions for seed growth based on this data. AI-driven systems could continuously evaluate the sprouting process, adjusting variables like water levels or air circulation automatically. This kind of dynamic feedback loop would reduce the need for human intervention and ensure that the system is always operating at peak efficiency. AI could also enhance the fabrication process by offering more precise, data-driven insights into material selection, design modifications, and optimization techniques, leading to more sustainable and effective product outcomes. 
-
-
-Peer Feedback Response
-
-Categorization of Feedback
-
-Desire for Demonstration and Application: Many respondents expressed interest in seeing a live demonstration or real-world application of the design, such as using an avocado, green onion, or other real-world objects to test how the design interacts with physical items.
-
-Iteration Process and Parameter Adjustability: The feedback frequently mentioned the success of the iterative process, including the ability to adjust parameters for different contexts 
-
-Interest in Surface Perforation and Patterning: A few respondents noted that it would be interesting to see further development in specific aspects, such as surface perforation and patterning.
-
-Suggestions for Improvement in the Presentation: While most responses were positive, some suggested minor improvements, such as shortening the explanation or including more visual demonstrations of the product in use.
-
-Analysis of Feedback
-
-Strengths: The strongest feedback centered on my ability to clearly communicate and explain the computational design process, even when working with complex Grasshopper functions. Respondents found the explanations approachable and appreciated the modular nature of the design. These comments indicate that my design process resonated well with the audience, particularly in terms of clarity and the usefulness of the iterative methods.
-
-Opportunities for Improvement: The desire for a physical or video demonstration of the product’s interaction with real-world objects, such as an avocado or green onion, highlights the audience’s interest in seeing how the design functions beyond the digital environment. Additionally, there’s curiosity about expanding the design to include surface perforation, indicating that more exploration in this area could further elevate the design.
-
-Suggestions for Future Work: Feedback suggests that I could show more versions of the design process to illustrate how different iterations led to the final outcome. This shows a desire for a more thorough narrative of the design journey, which would help the audience fully appreciate the complexity and evolution of the design. A couple of respondents also suggested a faster explanation, which indicates that streamlining future presentations could improve engagement.
-
-Response to Feedback and Next Steps
-
-Enhance Demonstration with Real-World Examples: Many respondents expressed interest in seeing the design interact with real-world objects. Moving forward, I could create a video demonstration where the seed sprouter design is tested with physical items like an avocado or green onion. This will not only bring the design to life but also give the audience a clearer sense of how it performs in practice.
-
-Further Exploration of Surface Patterning and Perforation: Given the interest in surface perforation, I could explore adding this feature in future iterations. This exploration can include how perforation affects airflow, water drainage, and overall aesthetics. By incorporating patterning options, I can also add a layer of personalization that aligns with user preferences for different styles.
-
-Streamline Presentation for Efficiency: While the majority of the audience found the explanations clear, I recognize the suggestion to shorten the explanation portion. For future presentations, I can streamline my delivery by focusing on the most critical points and utilizing visual aids or storytelling techniques to ensure the process remains engaging and to-the-point.
-
-Showcase Iteration Process More Thoroughly: Several respondents valued the iterative process but suggested showing more stages to better understand the design evolution. In response, I can include more visual examples of each stage in the process for future presentations. This will help communicate the design’s adaptability to different contexts, further highlighting its versatility.
-
-Highlight the Computational Design System: Feedback showed strong appreciation for how I handled the complex computational system using Grasshopper. To build on this, I can continue refining the parameter-driven system, ensuring that it remains easy for users to manipulate without needing detailed knowledge of computational design. This will help users feel confident in the system’s flexibility, even if they are not familiar with the underlying technology.
-
-Conclusion
-
-In this report, I explored the potential and challenges of computational design through the development of a seed sprouter, a project that leveraged Grasshopper to integrate adaptability and customization in response to varying user needs and environmental conditions. The feedback from peers underscored the success in explaining complex processes clearly and highlighted areas for future enhancements such as real-world demonstrations and further exploration of design features like surface patterning. Moving forward, the plan is to refine these areas, enhance demonstrations with tangible, real-world applications, and continue leveraging computational tools to make the design process as intuitive and flexible as possible. The journey of this project not only advanced my proficiency with computational design but also enriched my understanding of its implications for sustainable and user-centered design practices. This exploration sets a firm foundation for future projects where the integration of design, function, and user adaptability will continue to evolve, meeting the dynamic demands of the modern world.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Github Background Information & Context
-If you’re new to GitHub, you can think of this as a shared file space (like a Google Drive folder, or a like a USB drive that’s hosted online.) 
-
-This is your space to store project files, videos, PDFs, notes, images, etc., and (hopefully, neatly) organize so it's easy for viewers (and you!) to navigate. That said, it’s super easy for you to share any file or folder with us (your TDF instructional team) - just send us the link!  As a start, feel free to simply add images to the `/assets` folder, which is located [here](/assets). 
-
-The specific file that I’m typing into right now is the **README.md** for this repo. 
-##### (💡 TIP: The .md indicates that we’re using [Markdown formatting.](https://www.markdownguide.org/cheat-sheet/)) #####
-<h6> (💡 TIP 2: GitHub Markdown supports <a href="https://gist.github.com/seanh/13a93686bf4c2cb16e658b3cf96807f2"> <em>HTML formatting</em> too, including emojis 😄</a>, in case that helps!) </h6>
-
-### :star: Whatever you write in your **README.md** will show up on the “front page” of your GitHub repo. This is where we’ll be looking for your [weekly progress reports](https://github.com/Berkeley-MDes/24f-desinv-202/wiki/3.0-Weekly-Submissions#weekly-progress-report). They might look something like this: ###
-
-# Week 1: Example Report 1 #
-## Week of 09/05/2024
-
-This week, I designed a cool phone stand made of rocks. Check out all my cool sketches and progress photos from this week below, etc., etc....
-
-<img width="200" alt="Cool Phone Stand made of rocks" src="assets/exampleimg.png">
-
----
-
-It's time to start making this space your own! If you want to save these instructions, make a copy.  Also, feel empowered to delete everything in this README.md and start documenting! 
-
-Excited to work with you,
-your TDF teaching team
-
-PS: let us know if you have any questions!!
-
-PPS: 
-
-## Quick Links, compiled here for your convenience: ##
-
-- [TDF Wiki](https://github.com/Berkeley-MDes/24f-desinv-202/wiki) - the ultimate source for truth and information about the course and assignments
-- [Google Drive Folder](https://drive.google.com/drive/u/0/folders/1DJ1b6sSDwHXX6NRcQYt10ivyQSgU0ND6) - slides and other resources
-- [bCourses](https://bcourses.berkeley.edu/courses/1537533) - where the grading happens
