@@ -101,10 +101,11 @@ In the example: In the maximum setting, all values greater than 0 (B) can pass t
 <div align="center">
   <img src="https://github.com/user-attachments/assets/53459c92-a54f-4f26-be42-bb7567d04dc9" alt="creating clamp" width="80%"/>
 </div>  
-Just like in Illustrator, Grasshopper can draw curved lines that are adjustable.  
+Just like in Illustrator, Grasshopper can draw curved lines that are adjustable.    
 Steps:  
-1. Use Construct Point to create a point, then use Vector XYZ to control the tangent of that point. By using Vector Display Ex, the tangent is displayed as a gray arrow on the curve.                               
-2. Create two Merge components, inout all Construct Points into one, and all Vector XYZ into one. Make sure paired points and vector are matched in the two merges (D1 pair with D1, etc.).                               
+                                                                                                            
+1. Use Construct Point to create a point, then use Vector XYZ to control the tangent of that point. By using Vector Display Ex, the tangent is displayed as a gray arrow on the curve.    
+2. Create two Merge components, inout all Construct Points into one, and all Vector XYZ into one. Make sure paired points and vector are matched in the two merges (D1 pair with D1, etc.).  
 3. Create a Tangent Curve component, input Merged points into its vertices, and input Merged vectors into its tangents. Connect the Vector Display Ex into the outpit of the two merges to display the tangent.    
                                                                                                             
 <div align="center">
