@@ -91,10 +91,10 @@ In the example: In the maximum setting, all values greater than 0 (B) can pass t
 <table>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/40fa789a-0c3f-4110-8d66-db63a430e3c4" alt=points and vertex" width="50%"/>
+      <img src="https://github.com/user-attachments/assets/40fa789a-0c3f-4110-8d66-db63a430e3c4" alt=points and vertex" width="100%"/>
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/2f5d4e67-12a1-4690-9e6e-128d866dff8b" alt="tangent line" width="50%"/>
+      <img src="https://github.com/user-attachments/assets/2f5d4e67-12a1-4690-9e6e-128d866dff8b" alt="tangent line" width="100%"/>
     </td>
   </tr>
 </table>
@@ -103,9 +103,9 @@ In the example: In the maximum setting, all values greater than 0 (B) can pass t
 </div>  
 Just like in Illustrator, Grasshopper can draw curved lines that are adjustable.  
 Steps:  
-1. Use Construct Point to create a point, then use Vector XYZ to control the tangent of that point. By using Vector Display Ex, the tangent is displayed as a gray arrow on the curve.  
-2. Create two Merge components, inout all Construct Points into one, and all Vector XYZ into one. Make sure paired points and vector are matched in the two merges (D1 pair with D1, etc.).  
-3. Create a Tangent Curve component, input Merged points into its vertices, and input Merged vectors into its tangents. Connect the Vector Display Ex into the outpit of the two merges to display the tangent.  
+1. Use Construct Point to create a point, then use Vector XYZ to control the tangent of that point. By using Vector Display Ex, the tangent is displayed as a gray arrow on the curve.    
+2. Create two Merge components, inout all Construct Points into one, and all Vector XYZ into one. Make sure paired points and vector are matched in the two merges (D1 pair with D1, etc.).   
+3. Create a Tangent Curve component, input Merged points into its vertices, and input Merged vectors into its tangents. Connect the Vector Display Ex into the outpit of the two merges to display the tangent.    
                                                                                                             
 <div align="center">
   <img src="https://github.com/user-attachments/assets/87009edf-f5e0-45a5-af9f-fbba25d5d68a" alt="end points" width="80%"/>
