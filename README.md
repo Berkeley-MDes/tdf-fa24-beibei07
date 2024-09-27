@@ -79,7 +79,10 @@ Click + insert key: short cut to bake the geometry into the currently active lay
 When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences.   
 
 #### 1. Creating a clamp   
-Creating a clamp
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ebd5e418-abe6-4695-bd4c-b68df3449820" alt="creating clamp" width="80%"/>
+</div>
+
 
 
 
