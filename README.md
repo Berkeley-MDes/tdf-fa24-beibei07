@@ -151,10 +151,11 @@ Xiaomi has developed an extensive smart home ecosystem through its Mi Home platf
 ### Refelctions  
 
 # Week 5
-## Week Sep. 26-31
-### Monday Homework  
+## Week Sep. 26-31   
 
 For this week's mini projects, I am using Particle Web IDE (VS code is encountering some compiling issues which I absolutely do not know how to solve, hopefully Jeff can figure it out...) and Photon 2 micorcontroller.  
+
+### "Hello World"   
                                                                                                                                       
 <table>
   <tr>
@@ -169,23 +170,47 @@ For this week's mini projects, I am using Particle Web IDE (VS code is encounter
 <div align="center">
   <img src="https://github.com/user-attachments/assets/11a0ee42-2261-4d1e-aedb-9bae52711360" alt="end points" width="80%"/>
 </div>  
-
+                                                                                                                
 This first mini project I worked on is to print "Hello World" in the console. After successfully printed this command, I took a closer look at the script and identified two variables that I can manipulate to adjust the behavior of the result. The first is actual text that is being printed out (e.g. "Hello World"), I changed it to "I love CAT!" for testing.   
 
 <table>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/ebdf56fc-13d9-4ff5-81ef-b122bc1d5ca9" alt="Image 1" width="100%" />
+      <img src="https://github.com/user-attachments/assets/6d8c46d1-29fb-4974-92a1-ad6dfdd2823f" alt="Image 1" width="100%" />
     </td>
     <td>
-      <img src="https://github.com/user-attachments/assets/6d8c46d1-29fb-4974-92a1-ad6dfdd2823f" alt="Image 2" width="100%" />
+      <img src="https://github.com/user-attachments/assets/2a1e8241-b2b2-4161-8d2f-698cdbb57a95" alt="Image 2" width="100%" />
     </td>
   </tr>
-</table>                                                                                                  
-                                                                                                            
+</table>    
+                                                                                                             
+                                                                                                  
 Additionally, I manipulated with delay() function to control the rate of priting the message "I love CAT!". With a smaller number, the printing rate is faster; with a bigger number, the printing rate is slower.  
 Video showing printing in console with deplay(3000): https://www.youtube.com/watch?v=iB9YzXJQ7x8
 Video showing printing in console with deplay(500): https://youtu.be/raQHR2QPEGg
+
+
+### "Hello World" 
+
+After successfully printed "Hello World!", I took a step further to manipulate the behavior of the printed message: introduce some randomness to the printing rate. Based on my understanding of the code Jeff has given, the randomness works in the following steps:  
+1.<div align="center">
+  <img src="https://github.com/user-attachments/assets/764ca3af-ad55-45a9-af63-3a5f6d47f887" alt="end points" width="80%"/>
+</div>  
+First, create a change_period function and then give periodicity a random range from 300-1000.  
+2. <div align="center">
+  <img src="https://github.com/user-attachments/assets/7eaa41f3-a1e3-4bd5-8dcf-62124ff5a1cd" alt="end points" width="80%"/>
+</div>  
+Then, call the function when button is being pressed.  
+3. <div align="center">
+  <img src="https://github.com/user-attachments/assets/74d43c25-5cf2-4327-855d-e02649ae6f8e" alt="end points" width="80%"/>
+</div>  
+Lastly, assign periodicity to delay. The random number from 300-1000 will be the time delayed inbetween each message printed.  
+                                                                                                            By understanding how periodicity works in the script, I can manipulate it to control the printing rate of the message. Below are some examples:  
+Random (300-1000): https://youtu.be/qTnGmh6C2OY
+Random (100-300): https://youtu.be/kYl4h5hGSbs
+                                                                                                          
+
+
 
 
 
