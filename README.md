@@ -152,7 +152,33 @@ Xiaomi has developed an extensive smart home ecosystem through its Mi Home platf
 
 # Week 5
 ## Week Sep. 26-31
-### Monday Homework 
+### Monday Homework  
+
+For this week's mini projects, I am using Particle Web IDE (VS code is encountering some compiling issues which I absolutely do not know how to solve, hopefully Jeff can figure it out...) and Photon 2 micorcontroller.  
+                                                                                                                                           
+This first mini project I worked on is to print "Hello World" in the console. After successfully printed this command, I took a closer look at the script and identified two variables that I can manioulate to adjust the behavior of the result. The first is actual text that is being printed out (e.g. "Hello World"), I changed it to "I love CAT!" for testing (also to express my desire for having a cat...). 
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/ebdf56fc-13d9-4ff5-81ef-b122bc1d5ca9" alt="Image 1" width="100%" />
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/4c7864a9-f20d-43d4-8939-551c3a15d1d0" alt="Image 2" width="100%" />
+    </td>
+  </tr>
+</table>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/11a0ee42-2261-4d1e-aedb-9bae52711360" alt="end points" width="80%"/>
+</div>  
+
+[Watch the Live Video Stream](https://berkeley-mdes.github.io/tdf-fa24-beibei07/)
+
+
+
+
+
+
+
 
 
 
