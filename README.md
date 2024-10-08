@@ -1,9 +1,9 @@
 
 
 # Table of Content
-[week 1](README.md#week-1)
-[week 2](README.md#week-2)
-[week 3](README.md#week-3)
+[week 1](README.md#week-1)  
+[week 2](README.md#week-2)  
+[week 3](README.md#week-3)  
 ---
 
 # Week 1: 
@@ -75,7 +75,7 @@ Click + insert key: short cut to bake the geometry into the currently active lay
 
 
 # Week 3: 
-## Week of 09/12-19  
+## Week of Sep. 09/12-19  
 ### Reflections: New Things Learned   
 When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences.   
 
@@ -140,7 +140,7 @@ https://youtu.be/i21BiLD5xEc
 https://drive.google.com/drive/u/0/folders/1zDJGID57NZNYDydazGOXSmxJ7tzvU22K  
                                                                                                             
 # Week 4
-## Week 19-26
+## Week Sep. 19-26
 ### The Digital Ecosystem
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2b7915ec-3908-4a09-b960-c1abda3cf59b" alt="end points" width="100%"/>
@@ -148,7 +148,13 @@ https://drive.google.com/drive/u/0/folders/1zDJGID57NZNYDydazGOXSmxJ7tzvU22K
   
 Xiaomi has developed an extensive smart home ecosystem through its Mi Home platform. This system enables users to control a wide range of smart home devices through a centralized app (called Mi Home) and other connected devices. Like Amazon Alexa, Xiaomi has also developed an AI asistant named Xiaoai, by directing talking to smart speaker with Xiaoai installed, users can directly control the smart devices with their voice. This Xioami digital ecosystem has been in use at my home for several years, so I decided to talk about it for this project.    
 
-### Refelctions 
+### Refelctions  
+
+# Week 5
+## Week Sep. 26-31
+### Monday Homework 
+
+
 
 
                                                                                                             
