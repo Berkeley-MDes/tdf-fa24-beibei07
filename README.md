@@ -155,8 +155,7 @@ Xiaomi has developed an extensive smart home ecosystem through its Mi Home platf
 ### Monday Homework  
 
 For this week's mini projects, I am using Particle Web IDE (VS code is encountering some compiling issues which I absolutely do not know how to solve, hopefully Jeff can figure it out...) and Photon 2 micorcontroller.  
-                                                                                                                                           
-This first mini project I worked on is to print "Hello World" in the console. After successfully printed this command, I took a closer look at the script and identified two variables that I can manioulate to adjust the behavior of the result. The first is actual text that is being printed out (e.g. "Hello World"), I changed it to "I love CAT!" for testing (also to express my desire for having a cat...). 
+                                                                                                                                      
 <table>
   <tr>
     <td>
@@ -171,11 +170,26 @@ This first mini project I worked on is to print "Hello World" in the console. Af
   <img src="https://github.com/user-attachments/assets/11a0ee42-2261-4d1e-aedb-9bae52711360" alt="end points" width="80%"/>
 </div>  
 
-## Watch the Live Video
+This first mini project I worked on is to print "Hello World" in the console. After successfully printed this command, I took a closer look at the script and identified two variables that I can manipulate to adjust the behavior of the result. The first is actual text that is being printed out (e.g. "Hello World"), I changed it to "I love CAT!" for testing.   
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iB9YzXJQ7x8" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/ebdf56fc-13d9-4ff5-81ef-b122bc1d5ca9" alt="Image 1" width="100%" />
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/6d8c46d1-29fb-4974-92a1-ad6dfdd2823f" alt="Image 2" width="100%" />
+    </td>
+  </tr>
+</table>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6065c7cb-93d7-4f64-85c5-cd9667cd3529="end points" width="80%"/>
+</div>  
+                                                                                                             
+                                                                                                            
+Additionally, I manipulated with delay() function to control the rate of priting the message "I love CAT!". With a smaller number, the printing rate is faster; with a bigger number, the printing rate is slower.  
+Video showing printing in console with deplay(3000): https://www.youtube.com/watch?v=iB9YzXJQ7x8
+Video showing printing in console with deplay(500): https://youtu.be/raQHR2QPEGg
 
 
 
