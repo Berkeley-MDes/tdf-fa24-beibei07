@@ -171,7 +171,11 @@ This first mini project I worked on is to print "Hello World" in the console. Af
   <img src="https://github.com/user-attachments/assets/11a0ee42-2261-4d1e-aedb-9bae52711360" alt="end points" width="80%"/>
 </div>  
 
-[Watch the Live Video Stream](https://berkeley-mdes.github.io/tdf-fa24-beibei07/)
+## Watch the Live Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iB9YzXJQ7x8" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 
 
 
