@@ -190,7 +190,7 @@ Video showing printing in console with deplay(3000): https://www.youtube.com/wat
 Video showing printing in console with deplay(500): https://youtu.be/raQHR2QPEGg
 
 
-### "Hello World" 
+### "Change Periodicity" 
 
 After successfully printed "Hello World!", I took a step further to manipulate the behavior of the printed message: introduce some randomness to the printing rate. Based on my understanding of the code Jeff has given, the randomness works in the following steps:  
 <div align="center">
@@ -209,6 +209,33 @@ After successfully printed "Hello World!", I took a step further to manipulate t
 By understanding how periodicity works in the script, I can manipulate it to control the printing rate of the message. Below are some examples:    
 Random (300-1000): https://youtu.be/qTnGmh6C2OY  
 Random (100-300): https://youtu.be/kYl4h5hGSbs  
+
+### "Blink Outside"
+At this point I feel very intrigued by changing periodicity and introducing randomness to the system. So I choose "make it blink outside" mini project as an exploration into how to use priodicity to manipulate perpherial devices (LED light). 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4ad48045-17f0-41b2-9f17-2f94ba22d193" alt="end points" width="80%"/>
+</div>  
+
+Different from the previous minin project, this time LED light is introduced, Periodicity need to also manipulate the flashing rate of the LEDs. In the loop function, LED first turns on and last for delay(100), then turns off. If no periodicity is introduced, the loop function will immediately tuerns the LED back on by runing these aruguments again.  To change this, by calling the change-period function when button is being pressed and adding delay(periodicity), LED lights will delay for a random length before turning back on. 
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/761f9afd-fe59-45c2-832e-e8373824bf15" alt="Image 1" width="100%" />
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/8e54895f-3c5f-4468-a425-907bcfd1a4ad" alt="Image 2" width="100%" />
+    </td>
+  </tr>
+</table>  
+                                                                                                             
+After manipulating with the randomness, I could obtain different flashing rate of the LED lights. Here are some examples:  
+Random (300-1000): https://youtu.be/_19pnoKgRdo  
+Random (100-400): https://youtu.be/rorzfNyxSd0  
+
+
+                                                                                                            
+                                                                                                        
+
                                                                                                           
 
 
