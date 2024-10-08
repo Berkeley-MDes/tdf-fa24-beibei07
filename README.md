@@ -193,21 +193,22 @@ Video showing printing in console with deplay(500): https://youtu.be/raQHR2QPEGg
 ### "Hello World" 
 
 After successfully printed "Hello World!", I took a step further to manipulate the behavior of the printed message: introduce some randomness to the printing rate. Based on my understanding of the code Jeff has given, the randomness works in the following steps:  
-1.<div align="center">
+<div align="center">
   <img src="https://github.com/user-attachments/assets/764ca3af-ad55-45a9-af63-3a5f6d47f887" alt="end points" width="80%"/>
 </div>  
-First, create a change_period function and then give periodicity a random range from 300-1000.  
-2. <div align="center">
+1. First, create a change_period function and then give periodicity a random range from 300-1000.  
+<div align="center">
   <img src="https://github.com/user-attachments/assets/7eaa41f3-a1e3-4bd5-8dcf-62124ff5a1cd" alt="end points" width="80%"/>
 </div>  
-Then, call the function when button is being pressed.  
-3. <div align="center">
+2. Then, call the function when button is being pressed.  
+<div align="center">
   <img src="https://github.com/user-attachments/assets/74d43c25-5cf2-4327-855d-e02649ae6f8e" alt="end points" width="80%"/>
 </div>  
-Lastly, assign periodicity to delay. The random number from 300-1000 will be the time delayed inbetween each message printed.  
-                                                                                                            By understanding how periodicity works in the script, I can manipulate it to control the printing rate of the message. Below are some examples:  
-Random (300-1000): https://youtu.be/qTnGmh6C2OY
-Random (100-300): https://youtu.be/kYl4h5hGSbs
+3. Lastly, assign periodicity to delay. The random number from 300-1000 will be the time delayed inbetween each message printed.  
+                                                                                                            
+By understanding how periodicity works in the script, I can manipulate it to control the printing rate of the message. Below are some examples:    
+Random (300-1000): https://youtu.be/qTnGmh6C2OY  
+Random (100-300): https://youtu.be/kYl4h5hGSbs  
                                                                                                           
 
 
