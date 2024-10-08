@@ -181,11 +181,7 @@ This first mini project I worked on is to print "Hello World" in the console. Af
       <img src="https://github.com/user-attachments/assets/6d8c46d1-29fb-4974-92a1-ad6dfdd2823f" alt="Image 2" width="100%" />
     </td>
   </tr>
-</table>
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/6065c7cb-93d7-4f64-85c5-cd9667cd3529="end points" width="80%"/>
-</div>  
-                                                                                                             
+</table>                                                                                                  
                                                                                                             
 Additionally, I manipulated with delay() function to control the rate of priting the message "I love CAT!". With a smaller number, the printing rate is faster; with a bigger number, the printing rate is slower.  
 Video showing printing in console with deplay(3000): https://www.youtube.com/watch?v=iB9YzXJQ7x8
