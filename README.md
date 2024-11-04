@@ -3,7 +3,14 @@
 # Table of Content
 [week 1](README.md#week-1)  
 [week 2](README.md#week-2)  
-[week 3](README.md#week-3)  
+[week 3](README.md#week-3)   
+[week 4](README.md#week-4)     
+[week 5](README.md#week-5)     
+[week 6](README.md#week-6)  
+[week 7](README.md#week-7)  
+[week 8](README.md#week-8)  
+[week 9](README.md#week-9)  
+[week 10](README.md#week-10)  
 ---
 
 # Week 1: 
@@ -234,7 +241,7 @@ Random (100-400): https://youtu.be/rorzfNyxSd0
 
 ### "Button Led Pulse"  
 
-# Weekly Report - Week 6
+# Week 6
 
 ## Reflections
 This week, I focused on integrating and prototyping with hardware components, specifically a Stemma QT interface board, Photon 2, and an APDS 9960 proximity/gesture/color sensor. My first task involved soldering the Stemma QT interface board, which was crucial for establishing stable connections between the Photon 2 and the sensor. Through this process, I gained practical experience with soldering techniques, learning how to ensure reliable electrical connections for communication between the components.
@@ -268,6 +275,143 @@ Each prototype worked successfully, and seeing the immediate, physical responses
 In the near future, I believe tools like the Photon 2 and Stemma QT will continue to grow in their adaptability and ease of use, especially with more sensors and modules becoming compatible. The rapid development of plug-and-play hardware components suggests a future where even complex sensors and actuators can be seamlessly integrated into prototypes without much manual setup, allowing designers and developers to focus more on creative applications rather than technical connections.
 
 For my own work, I see potential in expanding these prototypes into more interactive applications. For instance, I could create a gesture-controlled interface where hand motions influence multiple elements, such as a series of lights or a display that reacts to different gestures. Additionally, I could explore using the APDS 9960's color detection capabilities to further enhance user interaction, perhaps creating responsive environments that change lighting or visuals based on detected colors. This progression would not only deepen my understanding of sensors but also open doors to more sophisticated interaction designs, aligning well with my focus in experiential and storytelling design.
+
+
+# Week 7
+
+## Reflections
+This week, my team and I concentrated on developing and formalizing our project idea for the **Particle Photon 2-Based Calendar Orb**. Our objective is to design a context-aware interactive orb that visually represents Google Calendar events through dynamic lighting and sensor-based interactions. By integrating the Particle Photon 2 microcontroller with various sensors, LEDs, and cloud services, we aim to create a physical device that can sync with a user’s Google Calendar, displaying events through color changes and sensor responses. This would offer an intuitive, hands-free way to keep track of upcoming events and reminders.
+
+### Key Aspects of the Project Proposal
+1. **Hardware Components and Integration**: 
+   - We plan to use the Particle Photon 2 board for its cloud connectivity and processing capabilities, paired with an RGB LED to display colors corresponding to event status.
+   - A gyroscope/accelerometer sensor will detect user interactions like shaking the orb. For instance, if an event is approaching, shaking the orb might trigger it to glow orange. If no events are near, it could turn green, providing immediate visual feedback.
+   - Additional components, such as buttons, a photoelectric sensor, and vibration motors, may be added to enhance interactivity and feedback.
+
+2. **System Architecture and Process Design**:
+   - We sketched an initial system architecture, outlining the connections between components: the Photon 2, STEMMA QT sensors, Google Calendar API, RGB LEDs, and cloud services.
+   - A process flow diagram was also created to map the end-to-end data flow. This begins with collecting sensor input and ends with triggering specific lighting effects based on the user’s calendar events.
+   - This design stage helped us understand how data from Google Calendar would move from the API to the Photon 2 device, and how different inputs would be processed to control the LEDs and vibration motor.
+  <div align="center">
+  <img src="https://github.com/user-attachments/assets/27e25f99-3a5e-46c0-b26b-7c7c0812b4b2" alt="System Architecture Diagram" width="100%"/>
+</div>
+
+ <div align="center">
+  <img src="https://github.com/user-attachments/assets/0f53a560-3955-4c4a-82e2-2e7456d6bb1a" alt="System Architecture Diagram" width="100%"/>
+</div>
+
+3. **Experiments and Testing Plan**:
+   - We outlined a series of experiments to test each component individually and as part of an integrated system. 
+     - For instance, I am responsible for validating the connection between Google Calendar and the Photon 2, which involves setting up API calls and ensuring that event data can be reliably fetched and displayed on the orb.
+     - My teammates are focused on experimenting with the LED light responses triggered by motion detection and testing the low-power sleep mode on the Photon 2 to improve energy efficiency.
+   - Each test is designed to identify integration challenges and refine our prototyping methods. This approach allows us to tackle potential issues early in the project, ensuring that each component can work harmoniously within the overall system.
+
+### My Role and Contributions
+My primary focus this week was on the API integration aspect of the project. I researched how to connect the Google Calendar API to the Particle Photon 2, examining the best practices for making HTTP requests and processing the responses on the Photon. Through this, I learned a lot about handling API responses in real-time and configuring the Photon 2 to sync with external cloud data. I also familiarized myself with Particle’s cloud service tools, which will be crucial for managing the data flow between Google Calendar and our physical device. This setup will allow us to map calendar events to specific colors on the orb, making the device both visually engaging and functional.
+
+Overall, this week laid a strong foundation for the technical and logistical aspects of our project. We clarified our objectives, distributed roles, and identified areas that may require further iteration. I feel that the project is on track, and I am more confident in our ability to tackle the API challenges and hardware integration as we move forward.
+
+## Speculations
+As we progress, I anticipate that our primary technical challenge will be ensuring seamless communication between the Particle Photon 2 and the Google Calendar API, especially when dealing with real-time data updates and response times. Currently, the IoT field is evolving rapidly, with cloud providers enhancing their support for real-time and low-latency applications. I believe that in the near future, cloud-connected IoT devices like ours will benefit from even more efficient API handling and improved latency, making such integrations faster and more stable. This trend will allow us to create more interactive and responsive devices with real-world applications in productivity and time management.
+
+For the **Calendar Orb**, I envision expanding its capabilities beyond basic calendar integration. The device could potentially become a multi-functional personal assistant, syncing with various data sources, such as reminders, weather updates, or even health data, to provide relevant information through visual cues. Additionally, incorporating machine learning algorithms could allow the orb to learn user behaviors, adjusting its responses based on recurring patterns in the calendar. This would further personalize the user experience, making the orb a truly adaptive and context-aware device.
+
+Our immediate future direction will focus on building and testing each component, gradually integrating them into a cohesive prototype. I believe that with the advancements in IoT and cloud technologies, this project has the potential to evolve into a practical product for smart home or office environments, enabling users to visualize and interact with their digital schedules in a tangible, engaging way.
+
+# Week 8
+
+## Reflections
+This week, I made significant progress on the API integration for our **Particle Photon 2-Based Calendar Orb** project, now named Remembrall from Harry Potter, focusing on setting up a system to retrieve Google Calendar data through Particle Cloud and Google Cloud services. Initially, I struggled with direct API integration and couldn’t get the event data to display on the Photon console. After troubleshooting with my classmate Tommy, I learned about using a **Webhook** as an intermediary between **Particle Cloud** and **Google Cloud Run Function**, which ultimately enabled the successful retrieval of Google Calendar data.
+
+### Key Components and Process Overview
+1. **Google Calendar API**: This API provides access to event data from Google Calendar, which is necessary for our project’s context-aware functionality. By querying this API, I can pull event start and end times to drive the visual responses of the orb.
+   
+2. **Google Cloud Run Function**: To control the flow of data, I implemented a custom Cloud Run function that receives HTTP requests from the webhook, queries the Google Calendar API, and filters out unnecessary information. It extracts only essential data, such as start and end times, formats it into a JSON response, and sends it back to the webhook. This function is designed to operate in UTC, ensuring that the events are time-accurate.
+
+3. **Webhook**: Serving as a bridge, the webhook listens for event triggers from the Photon 2 via Particle Cloud, initiates a request to the Cloud Run function, and forwards the response back to the Photon. This intermediary step was crucial for establishing reliable communication between Particle Cloud and Google Calendar API, as the Photon 2 does not natively support direct API calls.
+
+To initiate the process, I programmed the Photon 2 to publish a private event (`Particle.publish("get_calendar_events", PRIVATE)`) to Particle Cloud. This publication activates the webhook, which listens for this event. Upon receiving it, the webhook sends an HTTP request to the Google Cloud Run function, fetching the event data from Google Calendar in JSON format. After parsing this data, it sends it back to Particle Cloud, where the Photon 2 can access it and control the LED based on event timing.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/dcf28f21-8f71-490c-b867-4c55eef24248" alt="System Architecture Diagram for Particle Cloud and Google Calendar API Integration" width="100%"/>
+</div>
+
+### Prototype Demonstration and Photon Code
+In the Photon 2 script, I configured the device to subscribe to the webhook responses from Particle Cloud. This allows it to listen for JSON data returned from Google Calendar. Here’s an overview of the key functions in the code:
+- **JSON Parsing**: Using the `ArduinoJson` library, I parse the JSON response to extract the start and end times for events.
+- **Time Conversion and Synchronization**: One challenge I encountered was synchronizing the Photon 2's time zone with the Google Calendar event data’s time zone. Initially, I tried converting both the Photon 2’s internal clock and the event data to local time, but this approach proved cumbersome. I realized that the Photon 2 syncs its system time with the Particle Cloud’s NTP server, defaulting to UTC, just like the Google Calendar API. This alignment eliminated the need for manual time zone conversions. However, despite both being in UTC, the formats differ—Photon uses Unix timestamps, while the API uses ISO 8601 strings. I implemented a `parseISO8601()` function to convert ISO 8601 to Unix timestamps, ensuring accurate time comparisons for LED responses.
+- **Event Status Check**: By comparing the current time with event start and end times, the Photon determines the event’s status. If an event is ongoing, it prints “Event is ongoing” and lights up the LED in red. If the event is upcoming, it lights up in blue; if there’s no event, it turns green.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6d68063b-8207-42e3-8cea-bc541e6eca5a" alt="Photon 2 Code for JSON Parsing and Event Time Comparison" width="100%"/>
+</div>
+
+This coding exercise helped me gain a deeper understanding of JSON handling on embedded devices, time synchronization, and time-based control. The Photon now accurately updates the LED based on the Google Calendar event status, achieving a key milestone in our project.
+
+### Webhook Logs and Debugging
+The webhook logs display the entire sequence, from the Photon’s event publication to the HTTP request and response cycle with Google Cloud Run Function. By reviewing these logs, I was able to verify the data exchange, monitor any delays, and ensure that the expected data was received. This debugging process was instrumental in refining our integration.
+
+### Google Cloud Run Function Code
+In Google Cloud Run, I wrote a JavaScript function to handle incoming webhook requests, query Google Calendar API, and return only relevant event data. The function excludes unnecessary fields (like event creator) and formats the response to include only start and end times. By focusing the response data, I minimized bandwidth and processing requirements on the Photon 2.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f024aeb7-ed98-4139-af36-e2133f35acb7" alt="Google Cloud Run Function Code for Event Filtering" width="100%"/>
+</div>
+
+## Speculations
+I anticipate that the use of webhooks and cloud functions will become increasingly prevalent in IoT integrations, as they enable devices to connect to complex APIs and handle large datasets effectively. This project taught me the importance of cloud bridging services to overcome hardware limitations, and I foresee these types of integrations becoming standard in IoT development.
+
+For our project’s future, we can expand the orb’s functionalities to include more sophisticated interactions. For example, we could adjust the LED behavior based on event importance, using different colors or patterns to indicate high-priority events. We might also integrate other services, such as weather or task management, to create a more comprehensive interactive display. This would transform the orb into a multi-purpose notification device, aligning with smart home trends that prioritize visual feedback and contextual information.
+
+# Week 9
+
+## Reflections
+This week, I continued working on our project. My contributions were focused on the product’s physical design, integration testing, and final demonstration recording.
+
+### 1. Product Modeling and Manufacturing
+Using **Rhino**, I modeled the Remembrall in four distinct parts:
+- The upper hemisphere
+- The lower hemisphere
+- The box that houses the microcontroller inside the sphere
+- The lid for the microcontroller box
+
+After completing the model, I moved on to manufacturing the parts using 3D printing. I used **PLA for the lower hemisphere** due to its durability and **translucent resin for the upper hemisphere**. The resin’s translucency allows the LED light to shine through, creating a visually engaging effect that aligns with our design goals. Additionally, the slight flexibility of the resin helps improve tolerance when fitting the two hemispheres together.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a8b0b3af-ffc0-41b8-9e1c-57500ef664d8" alt="Rhino Model of Remembrall" width="100%"/>
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/3b3953ee-6056-4163-a605-05881cb843c3" alt="Rhino Model of Remembrall" width="100%"/>
+</div>
+
+### 2. Hardware and API Integration Testing
+My teammates and I worked together to integrate the hardware code with the API response. This involved thoroughly testing the device’s response to Google Calendar events by adding, modifying, and deleting events in real-time. Each test allowed us to evaluate the functionality and responsiveness of the Remembrall, ensuring that it correctly updated based on event statuses:
+- **LED color changes** to indicate event statuses (e.g., upcoming, ongoing, or no events).
+- **Event timing adjustments** to test synchronization between the API response and hardware.
+
+This collaborative effort not only helped us refine the integration but also provided a chance to debug issues in real-time and enhance the user experience.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8eee9808-5873-4916-b07f-fdcb86fc85c2" alt="Hardware and API Testing" width="100%"/>
+</div>
+
+### 3. Final Demonstration Video
+To document our progress and showcase the final prototype, we recorded a video demonstration of the Remembrall in action. This video highlights the different stages of functionality, from initial setup to real-time response to calendar events. Working on this video provided a holistic view of our accomplishments and helped us visually communicate the concept and capabilities of the Remembrall.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/831387ed-c58f-48b4-a825-5bea273c5d3b" alt="Hardware and API Testing" width="100%"/>
+</div>
+Video URL: https://youtu.be/lZJBR3rfQgQ
+
+## Speculations
+As we move toward the project’s completion, I can envision additional enhancements to improve both the design and functionality of the Remembrall. For instance, we could experiment with other materials that offer better light diffusion, or add modular components to extend its functionality (e.g., sound alerts for high-priority events). Additionally, as IoT technology advances, future iterations of the Remembrall could integrate multiple data sources, making it a multifunctional tool for managing not just schedules, but also tasks, reminders, and other notifications.
+
+Our testing phase also revealed the potential of real-time data integration and the impact it can have on interactive devices. In future projects, I hope to apply these insights to create even more responsive and user-centered designs.
+
+
+
+
 
 
 
