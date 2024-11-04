@@ -245,10 +245,10 @@ In terms of prototypes, I created three functional setups:
 By programming the APDS 9960, I configured it to detect hand proximity and print numerical values to the console when my hand approached the sensor. This provided immediate feedback, allowing me to fine-tune the threshold values and better understand the sensor's sensitivity.
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/56e05225-b523-4215-a80f-7c071d3605e1)" alt="Proximity Sensor Prototype" width="100%"/>
+  <img src="https://github.com/user-attachments/assets/56e05225-b523-4215-a80f-7c071d3605e1" alt="Proximity Sensor Prototype" width="100%"/>
 </div>
 
-[Proximity Sensor Prototype Demo]([URL-to-video](https://youtube.com/shorts/6-ypDB4BNUQ))
+Video URL: https://youtube.com/shorts/6-ypDB4BNUQ
 
 ### 2. Gesture Sensor Prototype
 Building on the proximity setup, I programmed the sensor to recognize hand gestures. It could differentiate hand positioning (left, right, far, near), which provided insight into gesture recognition algorithms and enhanced my understanding of real-world applications for proximity sensors in user interface design.
@@ -257,10 +257,10 @@ Building on the proximity setup, I programmed the sensor to recognize hand gestu
 I combined the proximity sensor and an LED circuit (using a breadboard and jump wires) to create a responsive light setup. When my hand approached the sensor, the LED illuminated. This project solidified my knowledge of wiring and circuit design and demonstrated how proximity sensing could directly influence other components in a circuit.
 
 <div align="center">
-  <img src="![image](https://github.com/user-attachments/assets/8c106c2a-9388-465a-b13f-67c4e2aa8b35)" alt="Proximity-Controlled LED" width="100%"/>
+  <img src="https://github.com/user-attachments/assets/8c106c2a-9388-465a-b13f-67c4e2aa8b35" alt="Proximity-Controlled LED" width="100%"/>
 </div>
 
-[Proximity-Controlled LED Demo]([URL-to-video](https://youtube.com/shorts/AsEia1FgLRQ))
+Video URL: https://youtube.com/shorts/AsEia1FgLRQ
 
 Each prototype worked successfully, and seeing the immediate, physical responses to my interactions was satisfying. I feel that my soldering skills and familiarity with interfacing sensors have improved significantly, and I am gaining confidence in my ability to troubleshoot minor hardware issues.
 
