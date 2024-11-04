@@ -234,6 +234,42 @@ Random (100-400): https://youtu.be/rorzfNyxSd0
 
 ### "Button Led Pulse"  
 
+# Weekly Report - Week 6
+
+## Reflections
+This week, I focused on integrating and prototyping with hardware components, specifically a Stemma QT interface board, Photon 2, and an APDS 9960 proximity/gesture/color sensor. My first task involved soldering the Stemma QT interface board, which was crucial for establishing stable connections between the Photon 2 and the sensor. Through this process, I gained practical experience with soldering techniques, learning how to ensure reliable electrical connections for communication between the components.
+
+In terms of prototypes, I created three functional setups:
+
+### 1. Proximity Sensor Prototype
+By programming the APDS 9960, I configured it to detect hand proximity and print numerical values to the console when my hand approached the sensor. This provided immediate feedback, allowing me to fine-tune the threshold values and better understand the sensor's sensitivity.
+
+<div align="center">
+  <img src="![image](https://github.com/user-attachments/assets/56e05225-b523-4215-a80f-7c071d3605e1)" alt="Proximity Sensor Prototype" width="100%"/>
+</div>
+
+[Proximity Sensor Prototype Demo]([URL-to-video](https://youtube.com/shorts/6-ypDB4BNUQ))
+
+### 2. Gesture Sensor Prototype
+Building on the proximity setup, I programmed the sensor to recognize hand gestures. It could differentiate hand positioning (left, right, far, near), which provided insight into gesture recognition algorithms and enhanced my understanding of real-world applications for proximity sensors in user interface design.
+
+### 3. Proximity-Controlled LED
+I combined the proximity sensor and an LED circuit (using a breadboard and jump wires) to create a responsive light setup. When my hand approached the sensor, the LED illuminated. This project solidified my knowledge of wiring and circuit design and demonstrated how proximity sensing could directly influence other components in a circuit.
+
+<div align="center">
+  <img src="![image](https://github.com/user-attachments/assets/8c106c2a-9388-465a-b13f-67c4e2aa8b35)" alt="Proximity-Controlled LED" width="100%"/>
+</div>
+
+[Proximity-Controlled LED Demo]([URL-to-video](https://youtube.com/shorts/AsEia1FgLRQ))
+
+Each prototype worked successfully, and seeing the immediate, physical responses to my interactions was satisfying. I feel that my soldering skills and familiarity with interfacing sensors have improved significantly, and I am gaining confidence in my ability to troubleshoot minor hardware issues.
+
+## Speculations
+In the near future, I believe tools like the Photon 2 and Stemma QT will continue to grow in their adaptability and ease of use, especially with more sensors and modules becoming compatible. The rapid development of plug-and-play hardware components suggests a future where even complex sensors and actuators can be seamlessly integrated into prototypes without much manual setup, allowing designers and developers to focus more on creative applications rather than technical connections.
+
+For my own work, I see potential in expanding these prototypes into more interactive applications. For instance, I could create a gesture-controlled interface where hand motions influence multiple elements, such as a series of lights or a display that reacts to different gestures. Additionally, I could explore using the APDS 9960's color detection capabilities to further enhance user interaction, perhaps creating responsive environments that change lighting or visuals based on detected colors. This progression would not only deepen my understanding of sensors but also open doors to more sophisticated interaction designs, aligning well with my focus in experiential and storytelling design.
+
+
 
 
                                                                                                             
