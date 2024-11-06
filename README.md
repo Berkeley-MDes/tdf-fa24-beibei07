@@ -84,7 +84,7 @@ Click + insert key: short cut to bake the geometry into the currently active lay
 # Week 3: 
 ## Week of Sep. 09/12-19  
 ### Reflections: New Things Learned   
-When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences.   
+This week I completed my first Projet of this semester: Computational Design. I made a seed germinator using Rhino and Grasshopper. When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences.   
 
 #### 1. Creating a clamp   
 <div align="center">
@@ -366,7 +366,7 @@ For our project’s future, we can expand the orb’s functionalities to include
 # Week 9
 
 ## Reflections
-This week, I continued working on our project. My contributions were focused on the product’s physical design, integration testing, and final demonstration recording.
+This week, completed my second project of the semester, the **Rememberall**. My contributions were focused on the product’s physical design, integration testing, and final demonstration recording.
 
 ### 1. Product Modeling and Manufacturing
 Using **Rhino**, I modeled the Remembrall in four distinct parts:
