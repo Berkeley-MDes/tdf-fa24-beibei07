@@ -218,7 +218,7 @@ Random (300-1000): https://youtu.be/qTnGmh6C2OY
 Random (100-300): https://youtu.be/kYl4h5hGSbs  
 
 ### "Blink Outside"
-At this point I feel very intrigued by changing periodicity and introducing randomness to the system. So I choose "make it blink outside" mini project as an exploration into how to use priodicity to manipulate perpherial devices (LED light). 
+At this point I feel very intrigued by changing periodicity and introducing randomness to the system. So I choose "make it blink outside" as an exploration into how to use priodicity to manipulate perpherial devices (LED light). 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4ad48045-17f0-41b2-9f17-2f94ba22d193" alt="end points" width="80%"/>
 </div>  
@@ -409,6 +409,30 @@ As we move toward the project’s completion, I can envision additional enhancem
 
 Our testing phase also revealed the potential of real-time data integration and the impact it can have on interactive devices. In future projects, I hope to apply these insights to create even more responsive and user-centered designs.
 
+# Week 10
+
+## Reflections
+This week, I shifted my focus to developing a large language model (LLM) for my Project 3. Using a website called **ZeroWidth**, I learned how to construct an LLM tailored to act as an agent that represents myself (Vivian) and assists with navigating my TDF projects. This exploration gave me valuable insight into various components of LLM development and customization, helping me better understand the nuances of building a functional and responsive agent.
+
+### Key Components Explored
+1. **Agents**: ZeroWidth offers different types of agents, such as **ChatGPT 4O** and **ChatGPT 4O mini**. I experimented with both to understand their capabilities and performance differences. This choice is essential in shaping the agent’s responsiveness and suitability for different tasks.
+   
+2. **Prompt Creation**: Crafting effective prompts was a major part of my learning. I discovered how prompt design impacts the LLM’s responses and explored ways to structure prompts that guide the model in a way that aligns with my intended functionality—specifically, as an assistant for TDF project navigation.
+
+3. **Variables and Knowledge Base**: I added variables and created a **knowledge base** to equip the agent with relevant context. By integrating information directly related to my projects, I ensured that the LLM could respond with project-specific insights. This functionality is vital for transforming the LLM into a personalized and informed assistant.
+
+4. **Temperature Adjustment**: I experimented with adjusting the **temperature** setting, which influences the randomness and creativity of the model’s responses. This allowed me to find an optimal balance between accurate, consistent responses and creativity, depending on the nature of the queries it might handle in navigating TDF projects.
+
+Developing this LLM has been a valuable learning experience, and I now feel more confident in my ability to leverage ZeroWidth’s features to build a customized and useful tool. By the end of this week, I had a working prototype of an LLM agent that can represent me and assist in navigating project details effectively.
+
+<div align="center">
+  <img src="URL-to-ZeroWidth-screenshot" alt="ZeroWidth Platform with LLM Components" width="100%"/>
+</div>
+
+## Speculations
+Looking forward, I see potential in enhancing this LLM’s capabilities to better understand and interact with my TDF projects. With further refinement, I could train the agent to offer not only navigation assistance but also project-related insights, recommendations, or reflections. As ZeroWidth evolves, I expect even more advanced options for fine-tuning and training models, which could lead to greater personalization and contextual awareness.
+
+Developing this LLM has also sparked ideas for broader applications. In future projects, I might experiment with using similar agents to assist with other areas of work, such as research management or task tracking. This project has shown me the potential of LLMs as adaptive and interactive tools, aligning well with my interest in system and service design.
 
 
 
