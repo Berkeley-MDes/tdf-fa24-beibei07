@@ -84,7 +84,7 @@ Click + insert key: short cut to bake the geometry into the currently active lay
 # Week 3: 
 ## Week of Sep. 09/12-19  
 ### Reflections: New Things Learned   
-This week I completed my first Projet of this semester: Computational Design. I made a seed germinator using Rhino and Grasshopper. When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences.   
+This week I completed my first Projet of this semester: Computational Design and learned useful technical skills in Rhino, Grasshopper, and 3D printing. I made a seed germinator using Rhino and Grasshopper, and used 3D printing to manufacture it in PLA. When exploring Grasshopper, I discovered some useful combinations of components. The work process could be quicker and easier by memoruzing and retreiving them whenever needed. Downbelow, I'll briefly analyze each of them for my future conveniences.   
 
 #### 1. Creating a clamp   
 <div align="center">
@@ -321,7 +321,7 @@ Our immediate future direction will focus on building and testing each component
 # Week 8
 
 ## Reflections
-This week, I made significant progress on the API integration for our **Prememberall** project, focusing on setting up a system to retrieve Google Calendar data through Particle Cloud and Google Cloud services. Initially, I struggled with direct API integration and couldn’t get the event data to display on the Photon console. After getting help form my classmate Tommy, I learned about using a **Webhook** as an intermediary between **Particle Cloud** and **Google Cloud Run Function**, which ultimately enabled the successful retrieval of Google Calendar data.
+This week, I made significant progress on the API integration for our **Rememberall** project, focusing on setting up a system to retrieve Google Calendar data through Particle Cloud and Google Cloud services. Initially, I struggled with direct API integration and couldn’t get the event data to display on the Photon console. After getting help form my classmate Tommy, I learned about using a **Webhook** as an intermediary between **Particle Cloud** and **Google Cloud Run Function**, which ultimately enabled the successful retrieval of Google Calendar data.
 
 ### Key Components and Process Overview
 1. **Google Calendar API**: This API provides access to event data from Google Calendar, which is necessary for our project’s context-aware functionality. By querying this API, I can pull event start and end times to drive the visual responses of the rememberall.
@@ -366,7 +366,7 @@ For our project’s future, we can expand the orb’s functionalities to include
 # Week 9
 
 ## Reflections
-This week, completed my second project of the semester, the **Rememberall**. My contributions were focused on the product’s physical design, integration testing, and final demonstration recording.
+This week, completed my second project of the semester, the **Rememberall** and learned useful technical skills especially in getting API reponses. My contributions were focused on the product’s physical design, integration testing, and final demonstration recording.
 
 ### 1. Product Modeling and Manufacturing
 Using **Rhino**, I modeled the Remembrall in four distinct parts:
@@ -414,7 +414,7 @@ Our testing phase also revealed the potential of real-time data integration and 
 ## Reflections
 This week, I shifted my focus to developing a large language model (LLM) for my Project 3. Using a website called **ZeroWidth**, I learned how to construct an LLM tailored to act as an agent that represents myself (Vivian) and assists with navigating my TDF projects. This exploration gave me valuable insight into various components of LLM development and customization, helping me better understand the nuances of building a functional and responsive agent.
 
-### Key Components Explored
+### Key Components Explored & Technical skill learned
 1. **Agents**: ZeroWidth offers different types of agents, such as **ChatGPT 4O** and **ChatGPT 4O mini**. I experimented with both to understand their capabilities and performance differences. This choice is essential in shaping the agent’s responsiveness and suitability for different tasks.
    
 2. **Prompt Creation**: Crafting effective prompts was a major part of my learning. I discovered how prompt design impacts the LLM’s responses and explored ways to structure prompts that guide the model in a way that aligns with my intended functionality—specifically, as an assistant for TDF project navigation.
