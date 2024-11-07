@@ -280,12 +280,12 @@ For my own work, I see potential in expanding these prototypes into more interac
 # Week 7
 
 ## Reflections
-This week, my team and I concentrated on developing and formalizing our project idea for the **Particle Photon 2-Based Calendar Orb**. Our objective is to design a context-aware interactive orb that visually represents Google Calendar events through dynamic lighting and sensor-based interactions. By integrating the Particle Photon 2 microcontroller with various sensors, LEDs, and cloud services, we aim to create a physical device that can sync with a user’s Google Calendar, displaying events through color changes and sensor responses. This would offer an intuitive, hands-free way to keep track of upcoming events and reminders.
+This week, my team and I concentrated on developing and formalizing our project idea for the **Particle Photon 2-Based Calendar ball -- Rememberall**. Our objective is to design a context-aware interactive orb that visually represents Google Calendar events through dynamic lighting and sensor-based interactions. By integrating the Particle Photon 2 microcontroller with various sensors, LEDs, and cloud services, we aim to create a physical device that can sync with a user’s Google Calendar, displaying events through color changes and sensor responses. This would offer an intuitive, hands-free way to keep track of upcoming events and reminders.
 
 ### Key Aspects of the Project Proposal
 1. **Hardware Components and Integration**: 
    - We plan to use the Particle Photon 2 board for its cloud connectivity and processing capabilities, paired with an RGB LED to display colors corresponding to event status.
-   - A gyroscope/accelerometer sensor will detect user interactions like shaking the orb. For instance, if an event is approaching, shaking the orb might trigger it to glow orange. If no events are near, it could turn green, providing immediate visual feedback.
+   - A gyroscope/accelerometer sensor will detect user interactions like shaking the rememberall. For instance, if an event is approaching, shaking the rememberall might trigger it to glow orange. If no events are near, it could turn green, providing immediate visual feedback.
    - Additional components, such as buttons, a photoelectric sensor, and vibration motors, may be added to enhance interactivity and feedback.
 
 2. **System Architecture and Process Design**:
@@ -302,29 +302,29 @@ This week, my team and I concentrated on developing and formalizing our project 
 
 3. **Experiments and Testing Plan**:
    - We outlined a series of experiments to test each component individually and as part of an integrated system. 
-     - For instance, I am responsible for validating the connection between Google Calendar and the Photon 2, which involves setting up API calls and ensuring that event data can be reliably fetched and displayed on the orb.
+     - For instance, I am responsible for validating the connection between Google Calendar and the Photon 2, which involves setting up API calls and ensuring that event data can be reliably fetched and displayed on the rememberall.
      - My teammates are focused on experimenting with the LED light responses triggered by motion detection and testing the low-power sleep mode on the Photon 2 to improve energy efficiency.
    - Each test is designed to identify integration challenges and refine our prototyping methods. This approach allows us to tackle potential issues early in the project, ensuring that each component can work harmoniously within the overall system.
 
 ### My Role and Contributions
-My primary focus this week was on the API integration aspect of the project. I researched how to connect the Google Calendar API to the Particle Photon 2, examining the best practices for making HTTP requests and processing the responses on the Photon. Through this, I learned a lot about handling API responses in real-time and configuring the Photon 2 to sync with external cloud data. I also familiarized myself with Particle’s cloud service tools, which will be crucial for managing the data flow between Google Calendar and our physical device. This setup will allow us to map calendar events to specific colors on the orb, making the device both visually engaging and functional.
+My primary focus this week was on the API integration aspect of the project. I researched how to connect the Google Calendar API to the Particle Photon 2, examining the best practices for making HTTP requests and processing the responses on the Photon. Through this, I learned a lot about handling API responses in real-time and configuring the Photon 2 to sync with external cloud data. I also familiarized myself with Particle’s cloud service tools, which will be crucial for managing the data flow between Google Calendar and our physical device. This setup will allow us to map calendar events to specific colors on the rememberall, making the device both visually engaging and functional.
 
 Overall, this week laid a strong foundation for the technical and logistical aspects of our project. We clarified our objectives, distributed roles, and identified areas that may require further iteration. I feel that the project is on track, and I am more confident in our ability to tackle the API challenges and hardware integration as we move forward.
 
 ## Speculations
 As we progress, I anticipate that our primary technical challenge will be ensuring seamless communication between the Particle Photon 2 and the Google Calendar API, especially when dealing with real-time data updates and response times. Currently, the IoT field is evolving rapidly, with cloud providers enhancing their support for real-time and low-latency applications. I believe that in the near future, cloud-connected IoT devices like ours will benefit from even more efficient API handling and improved latency, making such integrations faster and more stable. This trend will allow us to create more interactive and responsive devices with real-world applications in productivity and time management.
 
-For the **Calendar Orb**, I envision expanding its capabilities beyond basic calendar integration. The device could potentially become a multi-functional personal assistant, syncing with various data sources, such as reminders, weather updates, or even health data, to provide relevant information through visual cues. Additionally, incorporating machine learning algorithms could allow the orb to learn user behaviors, adjusting its responses based on recurring patterns in the calendar. This would further personalize the user experience, making the orb a truly adaptive and context-aware device.
+For the **rememberall**, I envision expanding its capabilities beyond basic calendar integration. The device could potentially become a multi-functional personal assistant, syncing with various data sources, such as reminders, weather updates, or even health data, to provide relevant information through visual cues. Additionally, incorporating machine learning algorithms could allow the rememberall to learn user behaviors, adjusting its responses based on recurring patterns in the calendar. This would further personalize the user experience, making the rememberall a truly adaptive and context-aware device.
 
 Our immediate future direction will focus on building and testing each component, gradually integrating them into a cohesive prototype. I believe that with the advancements in IoT and cloud technologies, this project has the potential to evolve into a practical product for smart home or office environments, enabling users to visualize and interact with their digital schedules in a tangible, engaging way.
 
 # Week 8
 
 ## Reflections
-This week, I made significant progress on the API integration for our **Particle Photon 2-Based Calendar Orb** project, now named Remembrall from Harry Potter, focusing on setting up a system to retrieve Google Calendar data through Particle Cloud and Google Cloud services. Initially, I struggled with direct API integration and couldn’t get the event data to display on the Photon console. After troubleshooting with my classmate Tommy, I learned about using a **Webhook** as an intermediary between **Particle Cloud** and **Google Cloud Run Function**, which ultimately enabled the successful retrieval of Google Calendar data.
+This week, I made significant progress on the API integration for our **Prememberall** project, focusing on setting up a system to retrieve Google Calendar data through Particle Cloud and Google Cloud services. Initially, I struggled with direct API integration and couldn’t get the event data to display on the Photon console. After getting help form my classmate Tommy, I learned about using a **Webhook** as an intermediary between **Particle Cloud** and **Google Cloud Run Function**, which ultimately enabled the successful retrieval of Google Calendar data.
 
 ### Key Components and Process Overview
-1. **Google Calendar API**: This API provides access to event data from Google Calendar, which is necessary for our project’s context-aware functionality. By querying this API, I can pull event start and end times to drive the visual responses of the orb.
+1. **Google Calendar API**: This API provides access to event data from Google Calendar, which is necessary for our project’s context-aware functionality. By querying this API, I can pull event start and end times to drive the visual responses of the rememberall.
    
 2. **Google Cloud Run Function**: To control the flow of data, I implemented a custom Cloud Run function that receives HTTP requests from the webhook, queries the Google Calendar API, and filters out unnecessary information. It extracts only essential data, such as start and end times, formats it into a JSON response, and sends it back to the webhook. This function is designed to operate in UTC, ensuring that the events are time-accurate.
 
