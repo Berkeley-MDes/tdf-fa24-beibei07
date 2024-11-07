@@ -415,7 +415,7 @@ Our testing phase also revealed the potential of real-time data integration and 
 This week, I shifted my focus to developing a large language model (LLM) for my Project 3. Using a website called **ZeroWidth**, I learned how to construct an LLM tailored to act as an agent that represents myself (Vivian) and assists with navigating my TDF projects. This exploration gave me valuable insight into various components of LLM development and customization, helping me better understand the nuances of building a functional and responsive agent.
 
 ### Key Components Explored & Technical skill learned
-1. **Agents**: ZeroWidth offers different types of agents, such as **ChatGPT 4O** and **ChatGPT 4O mini**. I experimented with both to understand their capabilities and performance differences. This choice is essential in shaping the agent’s responsiveness and suitability for different tasks.
+1. **Agents**: ZeroWidth offers different types of agents, such as **ChatGPT 4O** and **ChatGPT 4O mini**. I experimented with both to understand their capabilities and performance differences. This choice is essential in sculpting the agent’s responsiveness and suitability for different tasks.
    
 2. **Prompt Creation**: Crafting effective prompts was a major part of my learning. I discovered how prompt design impacts the LLM’s responses and explored ways to structure prompts that guide the model in a way that aligns with my intended functionality—specifically, as an assistant for TDF project navigation.
 
