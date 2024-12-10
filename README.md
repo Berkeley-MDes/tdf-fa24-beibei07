@@ -470,7 +470,7 @@ Looking forward, I see potential in enhancing this LLM’s capabilities to bette
 Developing this LLM has also sparked ideas for broader applications. In future projects, I might experiment with using similar agents to assist with other areas of work, such as research management or task tracking. This project has shown me the potential of LLMs as adaptive and interactive tools, aligning well with my interest in system and service design.
 
 # Week 11
-# Week of 11/10/2024
+# Week of 11/07/2024-11/14/2024
 ## Video Link: https://youtu.be/FDk4oq9VinU
 
 ## Reflections
