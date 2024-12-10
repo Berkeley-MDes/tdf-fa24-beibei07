@@ -367,6 +367,7 @@ I anticipate that the use of webhooks and cloud functions will become increasing
 For our project’s future, we can expand the orb’s functionalities to include more sophisticated interactions. For example, we could adjust the LED behavior based on event importance, using different colors or patterns to indicate high-priority events. We might also integrate other services, such as weather or task management, to create a more comprehensive interactive display. This would transform the orb into a multi-purpose notification device, aligning with smart home trends that prioritize visual feedback and contextual information.
 
 # Week 9
+# Week of 10/24/2024-11/31/2024
 
 ## Reflections
 This week, completed my second project of the semester, the **Rememberall** and learned useful technical skills especially in getting API reponses. My contributions were focused on the product’s physical design, integration testing, and final demonstration recording.
