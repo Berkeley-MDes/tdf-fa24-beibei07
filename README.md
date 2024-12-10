@@ -11,6 +11,9 @@
 [week 8](README.md#week-8)  
 [week 9](README.md#week-9)  
 [week 10](README.md#week-10)  
+[week 11](README.md#week-10) 
+[week 12](README.md#week-10) 
+[week 13](README.md#week-10) 
 ---
 
 # Week 1: 
@@ -465,6 +468,137 @@ To improve accuracy, I changed the variable value to terms that were more freque
 Looking forward, I see potential in enhancing this LLM’s capabilities to better understand and interact with my TDF projects. With further refinement, I could train the agent to offer not only navigation assistance but also project-related insights, recommendations, or reflections. As ZeroWidth evolves, I expect even more advanced options for fine-tuning and training models, which could lead to greater personalization and contextual awareness.
 
 Developing this LLM has also sparked ideas for broader applications. In future projects, I might experiment with using similar agents to assist with other areas of work, such as research management or task tracking. This project has shown me the potential of LLMs as adaptive and interactive tools, aligning well with my interest in system and service design.
+
+# Week 11
+# Week of 11/10/2024
+## Video Link: https://youtu.be/FDk4oq9VinU
+
+## Reflections
+This week, I focused on creating a **project video** to showcase my LLM project, which I have been developing using the ZeroWidth platform. The video highlights the functionality of the LLM I built, including its role as an agent that represents me (Vivian) and assists in navigating my TDF projects. The process of crafting this video required a combination of technical explanation, storytelling, and effective visuals to communicate the purpose and capabilities of the LLM.
+
+### Video Creation Process
+1. **Scripting**: I started by drafting a script to structure the video. This included an introduction to the LLM project, its objectives, and the key features I implemented (e.g., agent representation, knowledge base, and customizable settings like temperature). Writing the script helped me focus on the most important aspects of the project to share.
+
+2. **Recording**: I captured video clips demonstrating how the LLM interacts with queries and navigates TDF projects. These clips showcased the seamless integration of components like the knowledge base and the agent's ability to handle project-specific inputs effectively.
+
+3. **Editing**: To bring the video together, I edited the recordings, adding transitions, annotations, and voiceovers to ensure clarity and engagement. This process taught me a lot about organizing technical content into a visually appealing and understandable format for an audience.
+
+4. **Finalizing**: The final video combines narration, screen recordings, and overlays that clearly explain how the LLM works, its applications, and its potential future enhancements. I feel that the video effectively demonstrates the project’s scope and functionality.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/341c7050-43e2-4b03-952e-df712144c65f" alt="Screenshot of Project Video" width="100%"/>
+</div>
+
+Creating this video not only helped document my work but also provided me with valuable experience in visual communication and storytelling. The process reinforced the importance of presenting technical content in a way that’s accessible and engaging to a broader audience.
+
+## Speculations
+As I worked on editing the video, I began to reflect on the potential of **AI in video editing**. AI-powered tools are already transforming video production, offering features like automated scene selection, intelligent cropping, and real-time transcription. In the future, I anticipate AI will play an even larger role in video editing, enabling:
+- **Personalized Editing Styles**: AI could learn a user's editing preferences over time, automatically applying consistent styles, transitions, and effects across multiple projects.
+- **Content-Aware Editing**: Advanced AI systems could analyze video content, identify the key moments or themes, and suggest or even automate edits based on the context.
+- **Speech and Emotion Recognition**: AI could enhance storytelling by syncing visual effects or music with the tone of voice or detected emotions in a video.
+- **Automated Accessibility Features**: Real-time generation of captions, translations, and alternative formats could make videos more accessible to diverse audiences.
+
+These advancements would significantly streamline video production workflows, making high-quality editing accessible to more people. For my future projects, I’m particularly interested in exploring AI tools to enhance visual storytelling and integrate interactivity into project demonstrations.
+
+This week’s experience has reinforced my belief in the synergy between AI and creative processes, and I’m excited to see how these technologies will continue to evolve.
+
+# Week 12
+# Week of 11/17/2024
+
+## Reflections
+This week, I focused on two primary areas for our **final project**: experimenting with **storytelling integration** using Inky in Unity for the front-end game and exploring materials for the **physical product**, which includes a neck-wearable device.
+
+### 1. Storytelling Integration in Unity
+I began experimenting with **Inky**, a tool for creating interactive storytelling, and integrating its output into Unity to power the narrative for the game portion of the project. The goal was to create a dynamic, engaging storytelling experience that adapts based on player interactions. Key aspects of this experimentation included:
+- **Ink Script Development**: I used Inky to craft branching storylines that align with the game’s objectives. These scripts incorporate decision-making elements, allowing players to influence the story's direction.
+- **Unity Integration**: By importing Ink scripts into Unity, I worked on connecting the game mechanics to the narrative. This required scripting interactions so that player actions trigger specific story branches, ensuring a seamless blend between gameplay and storytelling.
+- **Challenges and Refinement**: The main challenge was synchronizing Unity's game state with the Ink script’s variables. I spent time debugging to ensure the game correctly reflects story changes and provides smooth transitions between narrative and gameplay.
+
+This experimentation laid the groundwork for the game’s front-end storytelling and helped me understand the technicalities of combining interactive narratives with Unity’s framework.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9f943f41-e731-438d-ba23-bd9046f71030" alt="Inky Integration in Unity" width="100%"/>
+</div>
+
+### 2. Physical Product Experimentation
+On the hardware side, I explored materials and sensors to create a **neck-wearable device** for data collection. This device will be part of the project’s physical product and aims to measure neck movement using flex sensors. Here’s what I worked on:
+- **Flex Sensor Integration**: I tested flex sensors as the primary input mechanism for capturing neck muscle movements. The sensor’s sensitivity and response time were key factors in determining its effectiveness.
+- **Material Experimentation**: I experimented with **web foam** and **fabric** to design the wearable. Web foam provided flexibility and comfort, while fabric offered durability and better adaptability to different neck sizes. I compared their performance in terms of sensor placement, stability, and user comfort.
+- **Prototyping and Testing**: Combining the sensors and materials, I created initial prototypes to test how well the wearable captures data during neck movements. These experiments helped identify optimal material combinations and sensor configurations.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a698dc4e-4ee1-47e1-80c4-047c43401a83" alt="Neck-Wearable Prototype with Flex Sensor" width="100%"/>
+</div>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/784f4621-d8ae-44fb-bdac-6df90f208441" alt="Neck-Wearable Prototype with Flex Sensor" width="100%"/>
+</div>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/69e1a1fb-42b3-4291-b365-ca27e8cd7b85" alt="Neck-Wearable Prototype with Flex Sensor" width="100%"/>
+</div>
+
+
+### 3. Lessons Learned
+This week’s work highlighted the importance of both technical integration and physical prototyping in creating a cohesive product. While the storytelling integration is shaping the front-end experience, the physical wearable adds a meaningful layer of interaction, bridging the game with real-world data collection.
+
+## Speculations
+In future development, I envision integrating **ChatGPT into Unity** to create even more **adaptive storytelling experiences**. While Inky provides branching narratives, ChatGPT could introduce real-time, dynamic dialogue and plot generation. Here’s how I imagine this integration could evolve:
+- **Real-Time Interaction**: ChatGPT could enable NPCs to respond dynamically to player input, creating conversations that feel more personalized and immersive.
+- **Player-Centric Narratives**: By analyzing player behavior, ChatGPT could adapt the storyline to match individual playstyles, ensuring a unique experience for each player.
+- **Content Scalability**: ChatGPT’s ability to generate text on the fly would reduce the need for pre-written scripts, allowing for more expansive worlds with endless narrative possibilities.
+- **Hybrid Approach**: Combining Inky for structured story branches and ChatGPT for dynamic content could balance narrative control and player freedom, offering a richer storytelling experience.
+
+For the physical product, future iterations could involve integrating the wearable with Unity to directly influence the game’s story or mechanics based on real-time data from the flex sensors. This would make the game more interactive and responsive to player actions, further blurring the line between the physical and digital realms.
+
+This week’s experimentation has set the stage for integrating interactive storytelling and real-world interaction in our final project, pushing the boundaries of what’s possible with Unity and hardware integration.
+
+
+# Week 13
+# Week of 12/01/2024
+
+## Reflections
+This week, I worked on integrating **OpenCV with Unity**, capturing and transforming digital twin movements, and constructing a **web mesh wearable model** for our final project. The focus was on bridging real-world interactions with digital representations and creating a flexible physical prototype for the wearable device.
+
+### 1. OpenCV Integration with Unity
+I began testing **OpenCV integration with Unity** to create a **digital twin** that reflects real-time user movements. The goal was to mirror the user’s physical movements within Unity by capturing motion data using OpenCV and translating it into the digital twin’s movements. This integration allowed me to:
+- **Set up real-time motion tracking**: Using OpenCV, I tracked specific movements of the user and applied them to the digital twin in Unity. For example, head or neck movements were reflected immediately in the digital twin, providing a visual representation of the user's actions.
+- **Debugging and Optimization**: I encountered challenges with latency and precision but worked on optimizing the motion tracking pipeline to ensure smoother real-time reflections.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d2f2f4b1-17d7-40f4-a08b-2712edc0d47f" alt="OpenCV Integration with Unity for Digital Twin" width="100%"/>
+</div>
+
+### 2. Capturing and Animating the Digital Twin
+Building on the real-time reflection, I explored turning the **digital twin’s movements into animations**:
+- **Movement Capture**: I used OpenCV to record the digital twin’s movements and saved these as animation clips. This process allowed me to transition from real-time motion capture to reusable animations.
+- **Trigger-Based Animation**: To expand functionality, I shifted the digital twin’s control from real-time reflection to **trigger-based animations**. These animations were activated using keyboard inputs, simulating pre-defined motion states.
+    - For instance, pressing a key triggered the digital twin to perform a specific action (e.g., nodding or tilting).
+    - This system was designed to eventually replace keyboard inputs with **data from the wearable device**, ensuring that physical interactions would directly influence the digital twin in Unity.
+
+### 3. Constructing the Wearable Model
+For the physical wearable, I used **Rhino** to design a **web mesh model** that aligns with the project’s aesthetic and functional goals. The wearable model needed to be soft and flexible to accommodate neck movements while securely housing sensors:
+- **Web Mesh Design**: I created a lightweight web-like structure in Rhino, ensuring it provided enough flexibility for user comfort while maintaining structural integrity for sensor placement.
+- **TPU Printing**: I printed the model using **TPU** material. TPU was chosen for its softness, elasticity, and durability, which made it ideal for wearable applications. The resulting prototype offered the necessary flexibility to adapt to various neck sizes and movements.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f96208e1-95c2-4dba-af35-57b57edaee35" alt="Web Mesh Wearable Model Designed in Rhino" width="100%"/>
+</div>
+
+### 4. Lessons Learned
+This week’s work demonstrated the potential for combining digital and physical elements in interactive systems:
+- OpenCV’s real-time tracking capabilities provided a solid foundation for creating digital twins that respond to physical movements.
+- Transitioning from real-time tracking to trigger-based animations helped me better understand Unity’s animation system and how external inputs can control pre-defined animations.
+- The success of the TPU-printed wearable confirmed that the material choice and design approach could meet the project’s functional and aesthetic requirements.
+
+## Speculations
+Looking ahead, I see significant potential for expanding the integration of **OpenCV and Unity**. Real-time digital twins could evolve into fully interactive avatars, enabling applications in gaming, virtual reality, and remote collaboration. By replacing keyboard triggers with data from the wearable device, we could create a seamless interaction loop between physical inputs and digital outputs, offering a more immersive experience.
+
+On the hardware side, the web mesh wearable could be refined further to incorporate additional sensors or feedback mechanisms (e.g., vibration motors or LEDs) to enhance interactivity. The use of TPU also opens possibilities for exploring other flexible materials, such as silicone, to optimize comfort and durability.
+
+This week’s experiments have laid a strong foundation for connecting the physical and digital components of the project, pushing the boundaries of interactivity and personalization.
+
+
+
+
 
 
 
