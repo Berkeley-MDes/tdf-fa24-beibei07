@@ -413,7 +413,7 @@ As we move toward the project’s completion, I can envision additional enhancem
 Our testing phase also revealed the potential of real-time data integration and the impact it can have on interactive devices. In future projects, I hope to apply these insights to create even more responsive and user-centered designs.
 
 # Week 10
-# Week of 11/09/2024
+# Week of 10/31/2024-11/07/2024
 
 ## Reflections
 This week, I shifted my focus to developing a large language model (LLM) for my Project 3. Using a website called **ZeroWidth**, I learned how to construct an LLM tailored to act as an agent that represents myself (Vivian) and assists with navigating my TDF projects. This exploration gave me valuable insight into various components of LLM development and customization, helping me better understand the nuances of building a functional and responsive agent.
