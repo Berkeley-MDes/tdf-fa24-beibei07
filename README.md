@@ -553,7 +553,7 @@ This week’s experimentation has set the stage for integrating interactive stor
 
 
 # Week 13
-# Week of 12/01/2024
+# Week of 12/02/2024-12/05/2024
 
 ## Reflections
 This week, I worked on integrating **OpenCV with Unity**, capturing and transforming digital twin movements, and constructing a **web mesh wearable model** for our final project. The focus was on bridging real-world interactions with digital representations and creating a flexible physical prototype for the wearable device.
