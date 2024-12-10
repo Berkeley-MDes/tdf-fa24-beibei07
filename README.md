@@ -503,7 +503,7 @@ These advancements would significantly streamline video production workflows, ma
 This week’s experience has reinforced my belief in the synergy between AI and creative processes, and I’m excited to see how these technologies will continue to evolve.
 
 # Week 12
-# Week of 11/17/2024
+# Week of 11/14/2024-11/21/2024
 
 ## Reflections
 This week, I focused on two primary areas for our **final project**: experimenting with **storytelling integration** using Inky in Unity for the front-end game and exploring materials for the **physical product**, which includes a neck-wearable device.
