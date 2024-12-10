@@ -410,24 +410,56 @@ As we move toward the project’s completion, I can envision additional enhancem
 Our testing phase also revealed the potential of real-time data integration and the impact it can have on interactive devices. In future projects, I hope to apply these insights to create even more responsive and user-centered designs.
 
 # Week 10
+# Week of 11/09/2024
 
 ## Reflections
 This week, I shifted my focus to developing a large language model (LLM) for my Project 3. Using a website called **ZeroWidth**, I learned how to construct an LLM tailored to act as an agent that represents myself (Vivian) and assists with navigating my TDF projects. This exploration gave me valuable insight into various components of LLM development and customization, helping me better understand the nuances of building a functional and responsive agent.
 
-### Key Components Explored & Technical skill learned
-1. **Agents**: ZeroWidth offers different types of agents, such as **ChatGPT 4O** and **ChatGPT 4O mini**. I experimented with both to understand their capabilities and performance differences. This choice is essential in sculpting the agent’s responsiveness and suitability for different tasks.
-   
-2. **Prompt Creation**: Crafting effective prompts was a major part of my learning. I discovered how prompt design impacts the LLM’s responses and explored ways to structure prompts that guide the model in a way that aligns with my intended functionality—specifically, as an assistant for TDF project navigation.
+### Experiments
+1. **Experiment 1**
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7f852b0d-6da4-4125-af6f-ef2426e39fba" alt="ZeroWidth Platform with LLM Components" width="100%"/>
+</div>
+In this experiment, I experimented with adjusting the temperature setting, which affects the style and depth of the LLM’s responses:
+Temperature 1.6   
+1. Produces a more elaborate and conversational response.  
+2. Adds background information about Rhino and Grasshopper’s use in fields like architecture and design.  
+3. Feels detailed and engaging but can be more verbose.  
+Temperature 1   
+1. Yields a concise, straightforward answer.  
+2. Focuses on the core question without extra elaboration.  
+3. Suitable for users who prefer direct, factual responses.  
+The difference in response shows that a higher temperatures encourage richer, more exploratory responses, while lower temperatures lead to more focused and precise answers. 
+1. **Experiment 1**
+ 
+2. **Experiment 2**:
+  <div align="center">
+  <img src="https://github.com/user-attachments/assets/9245e6ec-4a53-46af-82a4-35804dc2cc3e" alt="ZeroWidth Platform with LLM Components" width="100%"/>
+</div> 
+In this experiment, I tested how changing the instruction in the prompt affects the LLM’s response. I focused on two types of changes: adding extra information and altering the tone. Because I do not have a knowledge base for the LLM to retrieve information by now, to add extra information, I simply instructed the LLM to include a joke at the end of each response. The LLM successfully performed this task. For altering the tone, I asked the LLM to use a "cowboy personality." This shifted the response style significantly, introducing playful, Western-themed language like “Howdy, partner!” while keeping the core information. This experiment shows the usefulness of modifying the instructions, it could help easier retrieval of intended information without needing to ask for it every time; it can also make the interaction more engaging and personalized. 
 
-3. **Variables and Knowledge Base**: I added variables and created a **knowledge base** to equip the agent with relevant context. By integrating information directly related to my projects, I ensured that the LLM could respond with project-specific insights. This functionality is vital for transforming the LLM into a personalized and informed assistant.
-
-4. **Temperature Adjustment**: I experimented with adjusting the **temperature** setting, which influences the randomness and creativity of the model’s responses. This allowed me to find an optimal balance between accurate, consistent responses and creativity, depending on the nature of the queries it might handle in navigating TDF projects.
-
-Developing this LLM has been a valuable learning experience, and I now feel more confident in my ability to leverage ZeroWidth’s features to build a customized and useful tool. By the end of this week, I had a working prototype of an LLM agent that can represent me and assist in navigating project details effectively.
+3. **Experiment 3**:
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7cf92e25-8d46-4e66-ba4a-ecebb6fd2972" alt="ZeroWidth Platform with LLM Components" width="100%"/>
+</div> 
 
 <div align="center">
-  <img src="URL-to-ZeroWidth-screenshot" alt="ZeroWidth Platform with LLM Components" width="100%"/>
-</div>
+  <img src="https://github.com/user-attachments/assets/631790a6-a9f0-4139-b2fa-5e7dd5639320" alt="ZeroWidth Platform with LLM Components" width="100%"/>
+</div> 
+In this experiment, I observed the impact of knowledge base design, specifically chunking, on the accuracy of responses.
+Background: This semester in my TDF course, I worked on three main projects: computational design, Photon 2 (Remembrall), and an LLM system.
+Initially, I set up my knowledge base with a token size of 300, resulting in 29 chunks. Using this setup, the LLM response included errors, misidentifying small experiments as full projects and failing to accurately recognize the actual number of projects. But it has included a link to my experiment outcome and project files. 
+To improve accuracy, I restructured my knowledge base with a smaller token size of 150, creating 62 chunks. This adjustment allowed the LLM to generate more precise responses, correctly identifying the three main projects and providing accurate descriptions for each. But this time, the LLM did not provide me URL to my project file. 
+From this experiment I learned:
+Chunking Strategy: Dividing information into chunks allows the LLM to search and retrieve relevant sections of knowledge more effectively. Smaller chunks tend to make retrieval more precise because the model can access specific pieces of information without irrelevant details. Larger chunks provide more context (e.g., project file URL) but may include extra information that isn't directly relevant, potentially diluting the response.
+Number of Tokens per Chunk: The token limit within each chunk also impacts retrieval and response quality. Fewer tokens (e.g., 150) make each chunk smaller and more focused, allowing the model to pinpoint specific details quickly. This is useful for detailed, specific queries. However, larger token limits (e.g., 300) may give the model more context to work with (provide project file URL). 
+
+4. **Experiment 4**:
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2c16800f-bacd-474a-9db6-58a1d4268663" alt="ZeroWidth Platform with LLM Components" width="100%"/>
+</div> 
+In this experiment, I attempted to create variables to guide the LLM toward providing more specific answers. I created a variable with the key ${LEARNING} and a default value of "Rhino." By applying this variable, the LLM was supposed to filter the knowledge base and retrieve information more relevant to "Rhino," ideally focusing on the computational design project (used Rhino). However, I discovered that since Rhino was mentioned sporadically across many projects without concentrated emphasis, the LLM often generated inaccurate responses, randomly selecting projects rather than focusing on the one that truly centered on Rhino.
+To improve accuracy, I changed the variable value to terms that were more frequently and intensively mentioned, specifically "LLM" and "Photon 2." With these values, the LLM was able to provide more accurate responses regarding the relevant projects. This indicates that for the variable to effectively guide responses, its value should be a prominent component in the knowledge base, with a strong association to specific chunks of information. In other words, the variable value needs to be closely linked to a distinct, well-defined topic within the knowledge base to ensure the LLM retrieves accurate, relevant responses.
 
 ## Speculations
 Looking forward, I see potential in enhancing this LLM’s capabilities to better understand and interact with my TDF projects. With further refinement, I could train the agent to offer not only navigation assistance but also project-related insights, recommendations, or reflections. As ZeroWidth evolves, I expect even more advanced options for fine-tuning and training models, which could lead to greater personalization and contextual awareness.
